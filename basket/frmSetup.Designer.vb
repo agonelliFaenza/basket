@@ -85,7 +85,7 @@ Partial Class frmSetup
         'frmSetup
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
-        Me.ClientSize = New System.Drawing.Size(284, 187)
+        Me.ClientSize = New System.Drawing.Size(280, 183)
         Me.ControlBox = False
         Me.Controls.Add(Me.MTB1)
         Me.Controls.Add(Me.Button4)
@@ -99,7 +99,6 @@ Partial Class frmSetup
         Me.ShowIcon = False
         Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "frmSetup"
         Me.TopMost = True
         Me.ResumeLayout(False)
         Me.PerformLayout()
