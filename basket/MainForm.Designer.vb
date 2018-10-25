@@ -49,30 +49,30 @@ Partial Class MainForm
         Me.Button10 = New System.Windows.Forms.Button()
         Me.Button11 = New System.Windows.Forms.Button()
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
-        Me.F0 = New System.Windows.Forms.Button()
-        Me.Button37 = New System.Windows.Forms.Button()
-        Me.Button38 = New System.Windows.Forms.Button()
-        Me.Button39 = New System.Windows.Forms.Button()
-        Me.Button40 = New System.Windows.Forms.Button()
-        Me.Button41 = New System.Windows.Forms.Button()
-        Me.Button42 = New System.Windows.Forms.Button()
-        Me.Button43 = New System.Windows.Forms.Button()
-        Me.Button44 = New System.Windows.Forms.Button()
-        Me.Button45 = New System.Windows.Forms.Button()
-        Me.Button46 = New System.Windows.Forms.Button()
-        Me.Button47 = New System.Windows.Forms.Button()
-        Me.Button12 = New System.Windows.Forms.Button()
-        Me.Button13 = New System.Windows.Forms.Button()
-        Me.Button14 = New System.Windows.Forms.Button()
-        Me.Button15 = New System.Windows.Forms.Button()
-        Me.Button16 = New System.Windows.Forms.Button()
-        Me.Button17 = New System.Windows.Forms.Button()
-        Me.Button18 = New System.Windows.Forms.Button()
-        Me.Button19 = New System.Windows.Forms.Button()
-        Me.Button20 = New System.Windows.Forms.Button()
-        Me.Button21 = New System.Windows.Forms.Button()
-        Me.Button22 = New System.Windows.Forms.Button()
-        Me.Button23 = New System.Windows.Forms.Button()
+        Me.FSX1 = New System.Windows.Forms.Button()
+        Me.FSX2 = New System.Windows.Forms.Button()
+        Me.FSX3 = New System.Windows.Forms.Button()
+        Me.FSX4 = New System.Windows.Forms.Button()
+        Me.FSX8 = New System.Windows.Forms.Button()
+        Me.FSX7 = New System.Windows.Forms.Button()
+        Me.FSX6 = New System.Windows.Forms.Button()
+        Me.FSX5 = New System.Windows.Forms.Button()
+        Me.FSX12 = New System.Windows.Forms.Button()
+        Me.FSX11 = New System.Windows.Forms.Button()
+        Me.FSX10 = New System.Windows.Forms.Button()
+        Me.FSX9 = New System.Windows.Forms.Button()
+        Me.FDX12 = New System.Windows.Forms.Button()
+        Me.FDX11 = New System.Windows.Forms.Button()
+        Me.FDX10 = New System.Windows.Forms.Button()
+        Me.FDX9 = New System.Windows.Forms.Button()
+        Me.FDX8 = New System.Windows.Forms.Button()
+        Me.FDX7 = New System.Windows.Forms.Button()
+        Me.FDX6 = New System.Windows.Forms.Button()
+        Me.FDX5 = New System.Windows.Forms.Button()
+        Me.FDX4 = New System.Windows.Forms.Button()
+        Me.FDX3 = New System.Windows.Forms.Button()
+        Me.FDX2 = New System.Windows.Forms.Button()
+        Me.FDX1 = New System.Windows.Forms.Button()
         Me.NomeDX12 = New System.Windows.Forms.Button()
         Me.NomeDX11 = New System.Windows.Forms.Button()
         Me.NomeDX10 = New System.Windows.Forms.Button()
@@ -108,6 +108,7 @@ Partial Class MainForm
         Me.lblStatus2 = New System.Windows.Forms.Label()
         Me.SerialPort2 = New System.IO.Ports.SerialPort(Me.components)
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
         'NomeSX1
@@ -118,6 +119,7 @@ Partial Class MainForm
         Me.NomeSX1.Name = "NomeSX1"
         Me.NomeSX1.Size = New System.Drawing.Size(335, 50)
         Me.NomeSX1.TabIndex = 0
+        Me.NomeSX1.Tag = "1"
         Me.NomeSX1.Text = "FUMAGALLI"
         Me.NomeSX1.UseVisualStyleBackColor = True
         '
@@ -129,6 +131,7 @@ Partial Class MainForm
         Me.NomeSX2.Name = "NomeSX2"
         Me.NomeSX2.Size = New System.Drawing.Size(335, 50)
         Me.NomeSX2.TabIndex = 1
+        Me.NomeSX2.Tag = "2"
         Me.NomeSX2.Text = "GAY"
         Me.NomeSX2.UseVisualStyleBackColor = True
         '
@@ -140,6 +143,7 @@ Partial Class MainForm
         Me.NomeSX3.Name = "NomeSX3"
         Me.NomeSX3.Size = New System.Drawing.Size(335, 50)
         Me.NomeSX3.TabIndex = 2
+        Me.NomeSX3.Tag = "3"
         Me.NomeSX3.Text = "COSTANZELLI"
         Me.NomeSX3.UseVisualStyleBackColor = True
         '
@@ -151,6 +155,7 @@ Partial Class MainForm
         Me.NomeSX4.Name = "NomeSX4"
         Me.NomeSX4.Size = New System.Drawing.Size(335, 50)
         Me.NomeSX4.TabIndex = 3
+        Me.NomeSX4.Tag = "4"
         Me.NomeSX4.Text = "SILIMBANI"
         Me.NomeSX4.UseVisualStyleBackColor = True
         '
@@ -162,6 +167,7 @@ Partial Class MainForm
         Me.NomeSX8.Name = "NomeSX8"
         Me.NomeSX8.Size = New System.Drawing.Size(335, 50)
         Me.NomeSX8.TabIndex = 7
+        Me.NomeSX8.Tag = "8"
         Me.NomeSX8.Text = "ZAMPA"
         Me.NomeSX8.UseVisualStyleBackColor = True
         '
@@ -173,6 +179,7 @@ Partial Class MainForm
         Me.NomeSX7.Name = "NomeSX7"
         Me.NomeSX7.Size = New System.Drawing.Size(335, 50)
         Me.NomeSX7.TabIndex = 6
+        Me.NomeSX7.Tag = "7"
         Me.NomeSX7.Text = "VENUCCI"
         Me.NomeSX7.UseVisualStyleBackColor = True
         '
@@ -184,6 +191,7 @@ Partial Class MainForm
         Me.NomeSX6.Name = "NomeSX6"
         Me.NomeSX6.Size = New System.Drawing.Size(335, 50)
         Me.NomeSX6.TabIndex = 5
+        Me.NomeSX6.Tag = "6"
         Me.NomeSX6.Text = "CASAGRANDE"
         Me.NomeSX6.UseVisualStyleBackColor = True
         '
@@ -195,6 +203,7 @@ Partial Class MainForm
         Me.NomeSX5.Name = "NomeSX5"
         Me.NomeSX5.Size = New System.Drawing.Size(335, 50)
         Me.NomeSX5.TabIndex = 4
+        Me.NomeSX5.Tag = "5"
         Me.NomeSX5.Text = "SAMORI"
         Me.NomeSX5.UseVisualStyleBackColor = True
         '
@@ -206,6 +215,7 @@ Partial Class MainForm
         Me.NomeSX12.Name = "NomeSX12"
         Me.NomeSX12.Size = New System.Drawing.Size(335, 50)
         Me.NomeSX12.TabIndex = 11
+        Me.NomeSX12.Tag = "12"
         Me.NomeSX12.Text = "ANGELI"
         Me.NomeSX12.UseVisualStyleBackColor = True
         '
@@ -217,6 +227,7 @@ Partial Class MainForm
         Me.NomeSX11.Name = "NomeSX11"
         Me.NomeSX11.Size = New System.Drawing.Size(335, 50)
         Me.NomeSX11.TabIndex = 10
+        Me.NomeSX11.Tag = "11"
         Me.NomeSX11.Text = "CHIAPPELLI"
         Me.NomeSX11.UseVisualStyleBackColor = True
         '
@@ -228,6 +239,7 @@ Partial Class MainForm
         Me.NomeSX10.Name = "NomeSX10"
         Me.NomeSX10.Size = New System.Drawing.Size(335, 50)
         Me.NomeSX10.TabIndex = 9
+        Me.NomeSX10.Tag = "10"
         Me.NomeSX10.Text = "PAMBIANCO"
         Me.NomeSX10.UseVisualStyleBackColor = True
         '
@@ -239,6 +251,7 @@ Partial Class MainForm
         Me.NomeSX9.Name = "NomeSX9"
         Me.NomeSX9.Size = New System.Drawing.Size(335, 50)
         Me.NomeSX9.TabIndex = 8
+        Me.NomeSX9.Tag = "9"
         Me.NomeSX9.Text = "PETRUCCI"
         Me.NomeSX9.UseVisualStyleBackColor = True
         '
@@ -385,293 +398,293 @@ Partial Class MainForm
         Me.ImageList1.Images.SetKeyName(4, "f4.png")
         Me.ImageList1.Images.SetKeyName(5, "f5.png")
         '
-        'F0
+        'FSX1
         '
-        Me.F0.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.F0.ImageIndex = 0
-        Me.F0.ImageList = Me.ImageList1
-        Me.F0.Location = New System.Drawing.Point(429, 84)
-        Me.F0.Margin = New System.Windows.Forms.Padding(0)
-        Me.F0.Name = "F0"
-        Me.F0.Size = New System.Drawing.Size(160, 50)
-        Me.F0.TabIndex = 49
-        Me.F0.UseVisualStyleBackColor = True
+        Me.FSX1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.FSX1.ImageIndex = 0
+        Me.FSX1.ImageList = Me.ImageList1
+        Me.FSX1.Location = New System.Drawing.Point(429, 84)
+        Me.FSX1.Margin = New System.Windows.Forms.Padding(0)
+        Me.FSX1.Name = "FSX1"
+        Me.FSX1.Size = New System.Drawing.Size(160, 50)
+        Me.FSX1.TabIndex = 49
+        Me.FSX1.UseVisualStyleBackColor = True
         '
-        'Button37
+        'FSX2
         '
-        Me.Button37.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button37.ImageIndex = 0
-        Me.Button37.ImageList = Me.ImageList1
-        Me.Button37.Location = New System.Drawing.Point(429, 134)
-        Me.Button37.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button37.Name = "Button37"
-        Me.Button37.Size = New System.Drawing.Size(160, 50)
-        Me.Button37.TabIndex = 50
-        Me.Button37.UseVisualStyleBackColor = True
+        Me.FSX2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.FSX2.ImageIndex = 0
+        Me.FSX2.ImageList = Me.ImageList1
+        Me.FSX2.Location = New System.Drawing.Point(429, 134)
+        Me.FSX2.Margin = New System.Windows.Forms.Padding(0)
+        Me.FSX2.Name = "FSX2"
+        Me.FSX2.Size = New System.Drawing.Size(160, 50)
+        Me.FSX2.TabIndex = 50
+        Me.FSX2.UseVisualStyleBackColor = True
         '
-        'Button38
+        'FSX3
         '
-        Me.Button38.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button38.ImageIndex = 0
-        Me.Button38.ImageList = Me.ImageList1
-        Me.Button38.Location = New System.Drawing.Point(429, 184)
-        Me.Button38.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button38.Name = "Button38"
-        Me.Button38.Size = New System.Drawing.Size(160, 50)
-        Me.Button38.TabIndex = 51
-        Me.Button38.UseVisualStyleBackColor = True
+        Me.FSX3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.FSX3.ImageIndex = 0
+        Me.FSX3.ImageList = Me.ImageList1
+        Me.FSX3.Location = New System.Drawing.Point(429, 184)
+        Me.FSX3.Margin = New System.Windows.Forms.Padding(0)
+        Me.FSX3.Name = "FSX3"
+        Me.FSX3.Size = New System.Drawing.Size(160, 50)
+        Me.FSX3.TabIndex = 51
+        Me.FSX3.UseVisualStyleBackColor = True
         '
-        'Button39
+        'FSX4
         '
-        Me.Button39.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button39.ImageIndex = 0
-        Me.Button39.ImageList = Me.ImageList1
-        Me.Button39.Location = New System.Drawing.Point(429, 234)
-        Me.Button39.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button39.Name = "Button39"
-        Me.Button39.Size = New System.Drawing.Size(160, 50)
-        Me.Button39.TabIndex = 52
-        Me.Button39.UseVisualStyleBackColor = True
+        Me.FSX4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.FSX4.ImageIndex = 0
+        Me.FSX4.ImageList = Me.ImageList1
+        Me.FSX4.Location = New System.Drawing.Point(429, 234)
+        Me.FSX4.Margin = New System.Windows.Forms.Padding(0)
+        Me.FSX4.Name = "FSX4"
+        Me.FSX4.Size = New System.Drawing.Size(160, 50)
+        Me.FSX4.TabIndex = 52
+        Me.FSX4.UseVisualStyleBackColor = True
         '
-        'Button40
+        'FSX8
         '
-        Me.Button40.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button40.ImageIndex = 0
-        Me.Button40.ImageList = Me.ImageList1
-        Me.Button40.Location = New System.Drawing.Point(429, 434)
-        Me.Button40.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button40.Name = "Button40"
-        Me.Button40.Size = New System.Drawing.Size(160, 50)
-        Me.Button40.TabIndex = 56
-        Me.Button40.UseVisualStyleBackColor = True
+        Me.FSX8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.FSX8.ImageIndex = 0
+        Me.FSX8.ImageList = Me.ImageList1
+        Me.FSX8.Location = New System.Drawing.Point(429, 434)
+        Me.FSX8.Margin = New System.Windows.Forms.Padding(0)
+        Me.FSX8.Name = "FSX8"
+        Me.FSX8.Size = New System.Drawing.Size(160, 50)
+        Me.FSX8.TabIndex = 56
+        Me.FSX8.UseVisualStyleBackColor = True
         '
-        'Button41
+        'FSX7
         '
-        Me.Button41.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button41.ImageIndex = 0
-        Me.Button41.ImageList = Me.ImageList1
-        Me.Button41.Location = New System.Drawing.Point(429, 384)
-        Me.Button41.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button41.Name = "Button41"
-        Me.Button41.Size = New System.Drawing.Size(160, 50)
-        Me.Button41.TabIndex = 55
-        Me.Button41.UseVisualStyleBackColor = True
+        Me.FSX7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.FSX7.ImageIndex = 0
+        Me.FSX7.ImageList = Me.ImageList1
+        Me.FSX7.Location = New System.Drawing.Point(429, 384)
+        Me.FSX7.Margin = New System.Windows.Forms.Padding(0)
+        Me.FSX7.Name = "FSX7"
+        Me.FSX7.Size = New System.Drawing.Size(160, 50)
+        Me.FSX7.TabIndex = 55
+        Me.FSX7.UseVisualStyleBackColor = True
         '
-        'Button42
+        'FSX6
         '
-        Me.Button42.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button42.ImageIndex = 0
-        Me.Button42.ImageList = Me.ImageList1
-        Me.Button42.Location = New System.Drawing.Point(429, 334)
-        Me.Button42.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button42.Name = "Button42"
-        Me.Button42.Size = New System.Drawing.Size(160, 50)
-        Me.Button42.TabIndex = 54
-        Me.Button42.UseVisualStyleBackColor = True
+        Me.FSX6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.FSX6.ImageIndex = 0
+        Me.FSX6.ImageList = Me.ImageList1
+        Me.FSX6.Location = New System.Drawing.Point(429, 334)
+        Me.FSX6.Margin = New System.Windows.Forms.Padding(0)
+        Me.FSX6.Name = "FSX6"
+        Me.FSX6.Size = New System.Drawing.Size(160, 50)
+        Me.FSX6.TabIndex = 54
+        Me.FSX6.UseVisualStyleBackColor = True
         '
-        'Button43
+        'FSX5
         '
-        Me.Button43.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button43.ImageIndex = 0
-        Me.Button43.ImageList = Me.ImageList1
-        Me.Button43.Location = New System.Drawing.Point(429, 284)
-        Me.Button43.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button43.Name = "Button43"
-        Me.Button43.Size = New System.Drawing.Size(160, 50)
-        Me.Button43.TabIndex = 53
-        Me.Button43.UseVisualStyleBackColor = True
+        Me.FSX5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.FSX5.ImageIndex = 0
+        Me.FSX5.ImageList = Me.ImageList1
+        Me.FSX5.Location = New System.Drawing.Point(429, 284)
+        Me.FSX5.Margin = New System.Windows.Forms.Padding(0)
+        Me.FSX5.Name = "FSX5"
+        Me.FSX5.Size = New System.Drawing.Size(160, 50)
+        Me.FSX5.TabIndex = 53
+        Me.FSX5.UseVisualStyleBackColor = True
         '
-        'Button44
+        'FSX12
         '
-        Me.Button44.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button44.ImageIndex = 0
-        Me.Button44.ImageList = Me.ImageList1
-        Me.Button44.Location = New System.Drawing.Point(429, 634)
-        Me.Button44.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button44.Name = "Button44"
-        Me.Button44.Size = New System.Drawing.Size(160, 50)
-        Me.Button44.TabIndex = 60
-        Me.Button44.UseVisualStyleBackColor = True
+        Me.FSX12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.FSX12.ImageIndex = 0
+        Me.FSX12.ImageList = Me.ImageList1
+        Me.FSX12.Location = New System.Drawing.Point(429, 634)
+        Me.FSX12.Margin = New System.Windows.Forms.Padding(0)
+        Me.FSX12.Name = "FSX12"
+        Me.FSX12.Size = New System.Drawing.Size(160, 50)
+        Me.FSX12.TabIndex = 60
+        Me.FSX12.UseVisualStyleBackColor = True
         '
-        'Button45
+        'FSX11
         '
-        Me.Button45.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button45.ImageIndex = 0
-        Me.Button45.ImageList = Me.ImageList1
-        Me.Button45.Location = New System.Drawing.Point(429, 584)
-        Me.Button45.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button45.Name = "Button45"
-        Me.Button45.Size = New System.Drawing.Size(160, 50)
-        Me.Button45.TabIndex = 59
-        Me.Button45.UseVisualStyleBackColor = True
+        Me.FSX11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.FSX11.ImageIndex = 0
+        Me.FSX11.ImageList = Me.ImageList1
+        Me.FSX11.Location = New System.Drawing.Point(429, 584)
+        Me.FSX11.Margin = New System.Windows.Forms.Padding(0)
+        Me.FSX11.Name = "FSX11"
+        Me.FSX11.Size = New System.Drawing.Size(160, 50)
+        Me.FSX11.TabIndex = 59
+        Me.FSX11.UseVisualStyleBackColor = True
         '
-        'Button46
+        'FSX10
         '
-        Me.Button46.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button46.ImageIndex = 0
-        Me.Button46.ImageList = Me.ImageList1
-        Me.Button46.Location = New System.Drawing.Point(429, 534)
-        Me.Button46.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button46.Name = "Button46"
-        Me.Button46.Size = New System.Drawing.Size(160, 50)
-        Me.Button46.TabIndex = 58
-        Me.Button46.UseVisualStyleBackColor = True
+        Me.FSX10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.FSX10.ImageIndex = 0
+        Me.FSX10.ImageList = Me.ImageList1
+        Me.FSX10.Location = New System.Drawing.Point(429, 534)
+        Me.FSX10.Margin = New System.Windows.Forms.Padding(0)
+        Me.FSX10.Name = "FSX10"
+        Me.FSX10.Size = New System.Drawing.Size(160, 50)
+        Me.FSX10.TabIndex = 58
+        Me.FSX10.UseVisualStyleBackColor = True
         '
-        'Button47
+        'FSX9
         '
-        Me.Button47.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button47.ImageIndex = 0
-        Me.Button47.ImageList = Me.ImageList1
-        Me.Button47.Location = New System.Drawing.Point(429, 484)
-        Me.Button47.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button47.Name = "Button47"
-        Me.Button47.Size = New System.Drawing.Size(160, 50)
-        Me.Button47.TabIndex = 57
-        Me.Button47.UseVisualStyleBackColor = True
+        Me.FSX9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.FSX9.ImageIndex = 0
+        Me.FSX9.ImageList = Me.ImageList1
+        Me.FSX9.Location = New System.Drawing.Point(429, 484)
+        Me.FSX9.Margin = New System.Windows.Forms.Padding(0)
+        Me.FSX9.Name = "FSX9"
+        Me.FSX9.Size = New System.Drawing.Size(160, 50)
+        Me.FSX9.TabIndex = 57
+        Me.FSX9.UseVisualStyleBackColor = True
         '
-        'Button12
+        'FDX12
         '
-        Me.Button12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button12.ImageIndex = 0
-        Me.Button12.ImageList = Me.ImageList1
-        Me.Button12.Location = New System.Drawing.Point(1079, 634)
-        Me.Button12.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(160, 50)
-        Me.Button12.TabIndex = 96
-        Me.Button12.UseVisualStyleBackColor = True
+        Me.FDX12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.FDX12.ImageIndex = 0
+        Me.FDX12.ImageList = Me.ImageList1
+        Me.FDX12.Location = New System.Drawing.Point(1079, 634)
+        Me.FDX12.Margin = New System.Windows.Forms.Padding(0)
+        Me.FDX12.Name = "FDX12"
+        Me.FDX12.Size = New System.Drawing.Size(160, 50)
+        Me.FDX12.TabIndex = 96
+        Me.FDX12.UseVisualStyleBackColor = True
         '
-        'Button13
+        'FDX11
         '
-        Me.Button13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button13.ImageIndex = 0
-        Me.Button13.ImageList = Me.ImageList1
-        Me.Button13.Location = New System.Drawing.Point(1079, 584)
-        Me.Button13.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(160, 50)
-        Me.Button13.TabIndex = 95
-        Me.Button13.UseVisualStyleBackColor = True
+        Me.FDX11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.FDX11.ImageIndex = 0
+        Me.FDX11.ImageList = Me.ImageList1
+        Me.FDX11.Location = New System.Drawing.Point(1079, 584)
+        Me.FDX11.Margin = New System.Windows.Forms.Padding(0)
+        Me.FDX11.Name = "FDX11"
+        Me.FDX11.Size = New System.Drawing.Size(160, 50)
+        Me.FDX11.TabIndex = 95
+        Me.FDX11.UseVisualStyleBackColor = True
         '
-        'Button14
+        'FDX10
         '
-        Me.Button14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button14.ImageIndex = 0
-        Me.Button14.ImageList = Me.ImageList1
-        Me.Button14.Location = New System.Drawing.Point(1079, 534)
-        Me.Button14.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button14.Name = "Button14"
-        Me.Button14.Size = New System.Drawing.Size(160, 50)
-        Me.Button14.TabIndex = 94
-        Me.Button14.UseVisualStyleBackColor = True
+        Me.FDX10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.FDX10.ImageIndex = 0
+        Me.FDX10.ImageList = Me.ImageList1
+        Me.FDX10.Location = New System.Drawing.Point(1079, 534)
+        Me.FDX10.Margin = New System.Windows.Forms.Padding(0)
+        Me.FDX10.Name = "FDX10"
+        Me.FDX10.Size = New System.Drawing.Size(160, 50)
+        Me.FDX10.TabIndex = 94
+        Me.FDX10.UseVisualStyleBackColor = True
         '
-        'Button15
+        'FDX9
         '
-        Me.Button15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button15.ImageIndex = 0
-        Me.Button15.ImageList = Me.ImageList1
-        Me.Button15.Location = New System.Drawing.Point(1079, 484)
-        Me.Button15.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button15.Name = "Button15"
-        Me.Button15.Size = New System.Drawing.Size(160, 50)
-        Me.Button15.TabIndex = 93
-        Me.Button15.UseVisualStyleBackColor = True
+        Me.FDX9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.FDX9.ImageIndex = 0
+        Me.FDX9.ImageList = Me.ImageList1
+        Me.FDX9.Location = New System.Drawing.Point(1079, 484)
+        Me.FDX9.Margin = New System.Windows.Forms.Padding(0)
+        Me.FDX9.Name = "FDX9"
+        Me.FDX9.Size = New System.Drawing.Size(160, 50)
+        Me.FDX9.TabIndex = 93
+        Me.FDX9.UseVisualStyleBackColor = True
         '
-        'Button16
+        'FDX8
         '
-        Me.Button16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button16.ImageIndex = 0
-        Me.Button16.ImageList = Me.ImageList1
-        Me.Button16.Location = New System.Drawing.Point(1079, 434)
-        Me.Button16.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button16.Name = "Button16"
-        Me.Button16.Size = New System.Drawing.Size(160, 50)
-        Me.Button16.TabIndex = 92
-        Me.Button16.UseVisualStyleBackColor = True
+        Me.FDX8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.FDX8.ImageIndex = 0
+        Me.FDX8.ImageList = Me.ImageList1
+        Me.FDX8.Location = New System.Drawing.Point(1079, 434)
+        Me.FDX8.Margin = New System.Windows.Forms.Padding(0)
+        Me.FDX8.Name = "FDX8"
+        Me.FDX8.Size = New System.Drawing.Size(160, 50)
+        Me.FDX8.TabIndex = 92
+        Me.FDX8.UseVisualStyleBackColor = True
         '
-        'Button17
+        'FDX7
         '
-        Me.Button17.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button17.ImageIndex = 0
-        Me.Button17.ImageList = Me.ImageList1
-        Me.Button17.Location = New System.Drawing.Point(1079, 384)
-        Me.Button17.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button17.Name = "Button17"
-        Me.Button17.Size = New System.Drawing.Size(160, 50)
-        Me.Button17.TabIndex = 91
-        Me.Button17.UseVisualStyleBackColor = True
+        Me.FDX7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.FDX7.ImageIndex = 0
+        Me.FDX7.ImageList = Me.ImageList1
+        Me.FDX7.Location = New System.Drawing.Point(1079, 384)
+        Me.FDX7.Margin = New System.Windows.Forms.Padding(0)
+        Me.FDX7.Name = "FDX7"
+        Me.FDX7.Size = New System.Drawing.Size(160, 50)
+        Me.FDX7.TabIndex = 91
+        Me.FDX7.UseVisualStyleBackColor = True
         '
-        'Button18
+        'FDX6
         '
-        Me.Button18.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button18.ImageIndex = 0
-        Me.Button18.ImageList = Me.ImageList1
-        Me.Button18.Location = New System.Drawing.Point(1079, 334)
-        Me.Button18.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button18.Name = "Button18"
-        Me.Button18.Size = New System.Drawing.Size(160, 50)
-        Me.Button18.TabIndex = 90
-        Me.Button18.UseVisualStyleBackColor = True
+        Me.FDX6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.FDX6.ImageIndex = 0
+        Me.FDX6.ImageList = Me.ImageList1
+        Me.FDX6.Location = New System.Drawing.Point(1079, 334)
+        Me.FDX6.Margin = New System.Windows.Forms.Padding(0)
+        Me.FDX6.Name = "FDX6"
+        Me.FDX6.Size = New System.Drawing.Size(160, 50)
+        Me.FDX6.TabIndex = 90
+        Me.FDX6.UseVisualStyleBackColor = True
         '
-        'Button19
+        'FDX5
         '
-        Me.Button19.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button19.ImageIndex = 0
-        Me.Button19.ImageList = Me.ImageList1
-        Me.Button19.Location = New System.Drawing.Point(1079, 284)
-        Me.Button19.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button19.Name = "Button19"
-        Me.Button19.Size = New System.Drawing.Size(160, 50)
-        Me.Button19.TabIndex = 89
-        Me.Button19.UseVisualStyleBackColor = True
+        Me.FDX5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.FDX5.ImageIndex = 0
+        Me.FDX5.ImageList = Me.ImageList1
+        Me.FDX5.Location = New System.Drawing.Point(1079, 284)
+        Me.FDX5.Margin = New System.Windows.Forms.Padding(0)
+        Me.FDX5.Name = "FDX5"
+        Me.FDX5.Size = New System.Drawing.Size(160, 50)
+        Me.FDX5.TabIndex = 89
+        Me.FDX5.UseVisualStyleBackColor = True
         '
-        'Button20
+        'FDX4
         '
-        Me.Button20.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button20.ImageIndex = 0
-        Me.Button20.ImageList = Me.ImageList1
-        Me.Button20.Location = New System.Drawing.Point(1079, 234)
-        Me.Button20.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button20.Name = "Button20"
-        Me.Button20.Size = New System.Drawing.Size(160, 50)
-        Me.Button20.TabIndex = 88
-        Me.Button20.UseVisualStyleBackColor = True
+        Me.FDX4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.FDX4.ImageIndex = 0
+        Me.FDX4.ImageList = Me.ImageList1
+        Me.FDX4.Location = New System.Drawing.Point(1079, 234)
+        Me.FDX4.Margin = New System.Windows.Forms.Padding(0)
+        Me.FDX4.Name = "FDX4"
+        Me.FDX4.Size = New System.Drawing.Size(160, 50)
+        Me.FDX4.TabIndex = 88
+        Me.FDX4.UseVisualStyleBackColor = True
         '
-        'Button21
+        'FDX3
         '
-        Me.Button21.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button21.ImageIndex = 0
-        Me.Button21.ImageList = Me.ImageList1
-        Me.Button21.Location = New System.Drawing.Point(1079, 184)
-        Me.Button21.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button21.Name = "Button21"
-        Me.Button21.Size = New System.Drawing.Size(160, 50)
-        Me.Button21.TabIndex = 87
-        Me.Button21.UseVisualStyleBackColor = True
+        Me.FDX3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.FDX3.ImageIndex = 0
+        Me.FDX3.ImageList = Me.ImageList1
+        Me.FDX3.Location = New System.Drawing.Point(1079, 184)
+        Me.FDX3.Margin = New System.Windows.Forms.Padding(0)
+        Me.FDX3.Name = "FDX3"
+        Me.FDX3.Size = New System.Drawing.Size(160, 50)
+        Me.FDX3.TabIndex = 87
+        Me.FDX3.UseVisualStyleBackColor = True
         '
-        'Button22
+        'FDX2
         '
-        Me.Button22.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button22.ImageIndex = 0
-        Me.Button22.ImageList = Me.ImageList1
-        Me.Button22.Location = New System.Drawing.Point(1079, 134)
-        Me.Button22.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button22.Name = "Button22"
-        Me.Button22.Size = New System.Drawing.Size(160, 50)
-        Me.Button22.TabIndex = 86
-        Me.Button22.UseVisualStyleBackColor = True
+        Me.FDX2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.FDX2.ImageIndex = 0
+        Me.FDX2.ImageList = Me.ImageList1
+        Me.FDX2.Location = New System.Drawing.Point(1079, 134)
+        Me.FDX2.Margin = New System.Windows.Forms.Padding(0)
+        Me.FDX2.Name = "FDX2"
+        Me.FDX2.Size = New System.Drawing.Size(160, 50)
+        Me.FDX2.TabIndex = 86
+        Me.FDX2.UseVisualStyleBackColor = True
         '
-        'Button23
+        'FDX1
         '
-        Me.Button23.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button23.ImageIndex = 0
-        Me.Button23.ImageList = Me.ImageList1
-        Me.Button23.Location = New System.Drawing.Point(1079, 84)
-        Me.Button23.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button23.Name = "Button23"
-        Me.Button23.Size = New System.Drawing.Size(160, 50)
-        Me.Button23.TabIndex = 85
-        Me.Button23.UseVisualStyleBackColor = True
+        Me.FDX1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.FDX1.ImageIndex = 0
+        Me.FDX1.ImageList = Me.ImageList1
+        Me.FDX1.Location = New System.Drawing.Point(1079, 84)
+        Me.FDX1.Margin = New System.Windows.Forms.Padding(0)
+        Me.FDX1.Name = "FDX1"
+        Me.FDX1.Size = New System.Drawing.Size(160, 50)
+        Me.FDX1.TabIndex = 85
+        Me.FDX1.UseVisualStyleBackColor = True
         '
         'NomeDX12
         '
@@ -681,6 +694,7 @@ Partial Class MainForm
         Me.NomeDX12.Name = "NomeDX12"
         Me.NomeDX12.Size = New System.Drawing.Size(335, 50)
         Me.NomeDX12.TabIndex = 72
+        Me.NomeDX12.Tag = "24"
         Me.NomeDX12.Text = "MAGRINI"
         Me.NomeDX12.UseVisualStyleBackColor = True
         '
@@ -692,6 +706,7 @@ Partial Class MainForm
         Me.NomeDX11.Name = "NomeDX11"
         Me.NomeDX11.Size = New System.Drawing.Size(335, 50)
         Me.NomeDX11.TabIndex = 71
+        Me.NomeDX11.Tag = "23"
         Me.NomeDX11.Text = "RAYMOND"
         Me.NomeDX11.UseVisualStyleBackColor = True
         '
@@ -703,6 +718,7 @@ Partial Class MainForm
         Me.NomeDX10.Name = "NomeDX10"
         Me.NomeDX10.Size = New System.Drawing.Size(335, 50)
         Me.NomeDX10.TabIndex = 70
+        Me.NomeDX10.Tag = "22"
         Me.NomeDX10.Text = "SIMIONI"
         Me.NomeDX10.UseVisualStyleBackColor = True
         '
@@ -714,6 +730,7 @@ Partial Class MainForm
         Me.NomeDX9.Name = "NomeDX9"
         Me.NomeDX9.Size = New System.Drawing.Size(335, 50)
         Me.NomeDX9.TabIndex = 69
+        Me.NomeDX9.Tag = "21"
         Me.NomeDX9.Text = "ROSSI"
         Me.NomeDX9.UseVisualStyleBackColor = True
         '
@@ -725,6 +742,7 @@ Partial Class MainForm
         Me.NomeDX8.Name = "NomeDX8"
         Me.NomeDX8.Size = New System.Drawing.Size(335, 50)
         Me.NomeDX8.TabIndex = 68
+        Me.NomeDX8.Tag = "20"
         Me.NomeDX8.Text = "BOWERS"
         Me.NomeDX8.UseVisualStyleBackColor = True
         '
@@ -736,6 +754,7 @@ Partial Class MainForm
         Me.NomeDX7.Name = "NomeDX7"
         Me.NomeDX7.Size = New System.Drawing.Size(335, 50)
         Me.NomeDX7.TabIndex = 67
+        Me.NomeDX7.Tag = "19"
         Me.NomeDX7.Text = "PRATO"
         Me.NomeDX7.UseVisualStyleBackColor = True
         '
@@ -747,6 +766,7 @@ Partial Class MainForm
         Me.NomeDX6.Name = "NomeDX6"
         Me.NomeDX6.Size = New System.Drawing.Size(335, 50)
         Me.NomeDX6.TabIndex = 66
+        Me.NomeDX6.Tag = "18"
         Me.NomeDX6.Text = "CALABRESE"
         Me.NomeDX6.UseVisualStyleBackColor = True
         '
@@ -758,6 +778,7 @@ Partial Class MainForm
         Me.NomeDX5.Name = "NomeDX5"
         Me.NomeDX5.Size = New System.Drawing.Size(335, 50)
         Me.NomeDX5.TabIndex = 65
+        Me.NomeDX5.Tag = "17"
         Me.NomeDX5.Text = "FULTZ"
         Me.NomeDX5.UseVisualStyleBackColor = True
         '
@@ -769,6 +790,7 @@ Partial Class MainForm
         Me.NomeDX4.Name = "NomeDX4"
         Me.NomeDX4.Size = New System.Drawing.Size(335, 50)
         Me.NomeDX4.TabIndex = 64
+        Me.NomeDX4.Tag = "16"
         Me.NomeDX4.Text = "CROW"
         Me.NomeDX4.UseVisualStyleBackColor = True
         '
@@ -780,6 +802,7 @@ Partial Class MainForm
         Me.NomeDX3.Name = "NomeDX3"
         Me.NomeDX3.Size = New System.Drawing.Size(335, 50)
         Me.NomeDX3.TabIndex = 63
+        Me.NomeDX3.Tag = "15"
         Me.NomeDX3.Text = "MONTANARI"
         Me.NomeDX3.UseVisualStyleBackColor = True
         '
@@ -791,6 +814,7 @@ Partial Class MainForm
         Me.NomeDX2.Name = "NomeDX2"
         Me.NomeDX2.Size = New System.Drawing.Size(335, 50)
         Me.NomeDX2.TabIndex = 62
+        Me.NomeDX2.Tag = "14"
         Me.NomeDX2.Text = "NDAW"
         Me.NomeDX2.UseVisualStyleBackColor = True
         '
@@ -802,6 +826,7 @@ Partial Class MainForm
         Me.NomeDX1.Name = "NomeDX1"
         Me.NomeDX1.Size = New System.Drawing.Size(335, 50)
         Me.NomeDX1.TabIndex = 61
+        Me.NomeDX1.Tag = "13"
         Me.NomeDX1.Text = "WILTSHIRE"
         Me.NomeDX1.UseVisualStyleBackColor = True
         '
@@ -1038,11 +1063,15 @@ Partial Class MainForm
         Me.Timer1.Enabled = True
         Me.Timer1.Interval = 250
         '
+        'Timer2
+        '
+        Me.Timer2.Interval = 2000
+        '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1236, 733)
+        Me.ClientSize = New System.Drawing.Size(1212, 709)
         Me.ControlBox = False
         Me.Controls.Add(Me.lblStatus2)
         Me.Controls.Add(Me.lblStatus1)
@@ -1064,18 +1093,18 @@ Partial Class MainForm
         Me.Controls.Add(Me.ButtonPiu)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Locali)
-        Me.Controls.Add(Me.Button12)
-        Me.Controls.Add(Me.Button13)
-        Me.Controls.Add(Me.Button14)
-        Me.Controls.Add(Me.Button15)
-        Me.Controls.Add(Me.Button16)
-        Me.Controls.Add(Me.Button17)
-        Me.Controls.Add(Me.Button18)
-        Me.Controls.Add(Me.Button19)
-        Me.Controls.Add(Me.Button20)
-        Me.Controls.Add(Me.Button21)
-        Me.Controls.Add(Me.Button22)
-        Me.Controls.Add(Me.Button23)
+        Me.Controls.Add(Me.FDX12)
+        Me.Controls.Add(Me.FDX11)
+        Me.Controls.Add(Me.FDX10)
+        Me.Controls.Add(Me.FDX9)
+        Me.Controls.Add(Me.FDX8)
+        Me.Controls.Add(Me.FDX7)
+        Me.Controls.Add(Me.FDX6)
+        Me.Controls.Add(Me.FDX5)
+        Me.Controls.Add(Me.FDX4)
+        Me.Controls.Add(Me.FDX3)
+        Me.Controls.Add(Me.FDX2)
+        Me.Controls.Add(Me.FDX1)
         Me.Controls.Add(Me.NomeDX12)
         Me.Controls.Add(Me.NomeDX11)
         Me.Controls.Add(Me.NomeDX10)
@@ -1088,18 +1117,18 @@ Partial Class MainForm
         Me.Controls.Add(Me.NomeDX3)
         Me.Controls.Add(Me.NomeDX2)
         Me.Controls.Add(Me.NomeDX1)
-        Me.Controls.Add(Me.Button44)
-        Me.Controls.Add(Me.Button45)
-        Me.Controls.Add(Me.Button46)
-        Me.Controls.Add(Me.Button47)
-        Me.Controls.Add(Me.Button40)
-        Me.Controls.Add(Me.Button41)
-        Me.Controls.Add(Me.Button42)
-        Me.Controls.Add(Me.Button43)
-        Me.Controls.Add(Me.Button39)
-        Me.Controls.Add(Me.Button38)
-        Me.Controls.Add(Me.Button37)
-        Me.Controls.Add(Me.F0)
+        Me.Controls.Add(Me.FSX12)
+        Me.Controls.Add(Me.FSX11)
+        Me.Controls.Add(Me.FSX10)
+        Me.Controls.Add(Me.FSX9)
+        Me.Controls.Add(Me.FSX8)
+        Me.Controls.Add(Me.FSX7)
+        Me.Controls.Add(Me.FSX6)
+        Me.Controls.Add(Me.FSX5)
+        Me.Controls.Add(Me.FSX4)
+        Me.Controls.Add(Me.FSX3)
+        Me.Controls.Add(Me.FSX2)
+        Me.Controls.Add(Me.FSX1)
         Me.Controls.Add(Me.Button10)
         Me.Controls.Add(Me.Button11)
         Me.Controls.Add(Me.Button8)
@@ -1162,30 +1191,30 @@ Partial Class MainForm
     Friend WithEvents Button10 As Button
     Friend WithEvents Button11 As Button
     Friend WithEvents ImageList1 As ImageList
-    Friend WithEvents F0 As Button
-    Friend WithEvents Button37 As Button
-    Friend WithEvents Button38 As Button
-    Friend WithEvents Button39 As Button
-    Friend WithEvents Button40 As Button
-    Friend WithEvents Button41 As Button
-    Friend WithEvents Button42 As Button
-    Friend WithEvents Button43 As Button
-    Friend WithEvents Button44 As Button
-    Friend WithEvents Button45 As Button
-    Friend WithEvents Button46 As Button
-    Friend WithEvents Button47 As Button
-    Friend WithEvents Button12 As Button
-    Friend WithEvents Button13 As Button
-    Friend WithEvents Button14 As Button
-    Friend WithEvents Button15 As Button
-    Friend WithEvents Button16 As Button
-    Friend WithEvents Button17 As Button
-    Friend WithEvents Button18 As Button
-    Friend WithEvents Button19 As Button
-    Friend WithEvents Button20 As Button
-    Friend WithEvents Button21 As Button
-    Friend WithEvents Button22 As Button
-    Friend WithEvents Button23 As Button
+    Friend WithEvents FSX1 As Button
+    Friend WithEvents FSX2 As Button
+    Friend WithEvents FSX3 As Button
+    Friend WithEvents FSX4 As Button
+    Friend WithEvents FSX8 As Button
+    Friend WithEvents FSX7 As Button
+    Friend WithEvents FSX6 As Button
+    Friend WithEvents FSX5 As Button
+    Friend WithEvents FSX12 As Button
+    Friend WithEvents FSX11 As Button
+    Friend WithEvents FSX10 As Button
+    Friend WithEvents FSX9 As Button
+    Friend WithEvents FDX12 As Button
+    Friend WithEvents FDX11 As Button
+    Friend WithEvents FDX10 As Button
+    Friend WithEvents FDX9 As Button
+    Friend WithEvents FDX8 As Button
+    Friend WithEvents FDX7 As Button
+    Friend WithEvents FDX6 As Button
+    Friend WithEvents FDX5 As Button
+    Friend WithEvents FDX4 As Button
+    Friend WithEvents FDX3 As Button
+    Friend WithEvents FDX2 As Button
+    Friend WithEvents FDX1 As Button
     Friend WithEvents NomeDX12 As Button
     Friend WithEvents NomeDX11 As Button
     Friend WithEvents NomeDX10 As Button
@@ -1221,4 +1250,5 @@ Partial Class MainForm
     Friend WithEvents lblStatus2 As Label
     Friend WithEvents SerialPort2 As IO.Ports.SerialPort
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents Timer2 As Timer
 End Class
