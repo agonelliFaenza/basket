@@ -1,8 +1,10 @@
 ﻿Public Class MainForm
     Public sxBuf(50) As Byte
     Public dxBuf(50) As Byte
-    Public bufFalli(50) As Byte
+    Public bufFalli(55) As Byte
     Public Active
+    Public bonusSx As Byte
+    Public bonusDx As Byte
 
     Private Sub btnEsci_Click(sender As Object, e As EventArgs) Handles btnEsci.Click
         Me.Close()
@@ -18,21 +20,21 @@
         Try
             If SerialPort1.IsOpen = False Then
                 SerialPort1.Open()
-                lblStatus1.Text = "PORT1 connessa"
+                lblStatus1.Text = "PORT1 connessa " & SerialPort1.PortName
             Else
-                SerialPort1.Write(bufFalli, 0, 50)
+                SerialPort1.Write(bufFalli, 0, 55)
             End If
         Catch
-            lblStatus1.Text = "PORT1 non connessa"
+            lblStatus1.Text = "PORT1 non connessa " & SerialPort1.PortName
         Finally
         End Try
         Try
             If SerialPort2.IsOpen = False Then
                 SerialPort2.Open()
-                lblStatus2.Text = "PORT2 connessa"
+                lblStatus2.Text = "PORT2 connessa " & SerialPort2.PortName
             End If
         Catch
-            lblStatus2.Text = "PORT2 non connessa"
+            lblStatus2.Text = "PORT2 non connessa " & SerialPort2.PortName
         Finally
         End Try
 
@@ -40,17 +42,49 @@
     End Sub
 
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        For i = 0 To 49
+        For i = 0 To 54
             bufFalli(i) = 0
         Next
+        BonusSX = 0
+        BonusDX = 0
+
         bufFalli(0) = &H3F
-        bufFalli(49) = &H6F
+        bufFalli(1) = BCDconvert(NumeroSX1.Text)
+        bufFalli(2) = BCDconvert(NumeroSX2.Text)
+        bufFalli(3) = BCDconvert(NumeroSX3.Text)
+        bufFalli(4) = BCDconvert(NumeroSX4.Text)
+        bufFalli(5) = BCDconvert(NumeroSX5.Text)
+        bufFalli(6) = BCDconvert(NumeroSX6.Text)
+        bufFalli(7) = BCDconvert(NumeroSX7.Text)
+        bufFalli(8) = BCDconvert(NumeroSX8.Text)
+        bufFalli(9) = BCDconvert(NumeroSX9.Text)
+        bufFalli(10) = BCDconvert(NumeroSX10.Text)
+        bufFalli(11) = BCDconvert(NumeroSX11.Text)
+        bufFalli(12) = BCDconvert(NumeroSX12.Text)
+        bufFalli(13) = BCDconvert(NumeroDX1.Text)
+        bufFalli(14) = BCDconvert(NumeroDX2.Text)
+        bufFalli(15) = BCDconvert(NumeroDX3.Text)
+        bufFalli(16) = BCDconvert(NumeroDX4.Text)
+        bufFalli(17) = BCDconvert(NumeroDX5.Text)
+        bufFalli(18) = BCDconvert(NumeroDX6.Text)
+        bufFalli(19) = BCDconvert(NumeroDX7.Text)
+        bufFalli(20) = BCDconvert(NumeroDX8.Text)
+        bufFalli(21) = BCDconvert(NumeroDX9.Text)
+        bufFalli(22) = BCDconvert(NumeroDX10.Text)
+        bufFalli(23) = BCDconvert(NumeroDX11.Text)
+        bufFalli(24) = BCDconvert(NumeroDX12.Text)
+
+        bufFalli(54) = &H1
+        bufFalli(54) = &H6F
         Try
             Me.SerialPort1.PortName = My.Settings.COM1
             Me.SerialPort2.PortName = My.Settings.COM2
         Catch
         End Try
-
+        If Val(My.Settings.Timeout) <= 0 Then
+            My.Settings.Timeout = 3000
+        End If
+        frmSetupSquadre.Show()
     End Sub
 
 
@@ -108,9 +142,12 @@
         NomeDX12.Enabled = True
 
         Timer2.Enabled = False
+        Active = vbNull
     End Sub
 
     Private Sub ButtonPiu_Click(sender As Object, e As EventArgs) Handles ButtonPiu.Click
+        Dim temp As Byte
+        Dim i As Byte
         Select Case Active
             Case 1
                 If FSX1.ImageIndex < 5 Then
@@ -234,12 +271,30 @@
                 End If
 
         End Select
+        temp = 0
+        For i = 25 To 36
+            temp = temp + bufFalli(i)
+        Next
+        If temp > 5 Then temp = 5
+        bufFalli(49) = temp
+        temp = 0
+        For i = 37 To 48
+            temp = temp + bufFalli(i)
+        Next
+        If temp > 5 Then temp = 5
+        bufFalli(50) = temp
+
+        If btnBonusSX.BackColor = SystemColors.Control Then bufFalli(51) = 0 Else bufFalli(51) = 1
+        If btnBonusDX.BackColor = SystemColors.Control Then bufFalli(52) = 0 Else bufFalli(52) = 1
+        Timer2.Interval = Val(My.Settings.Timeout)
         Timer2.Stop()
         Timer2.Start()
 
     End Sub
 
     Private Sub ButtonMeno_Click(sender As Object, e As EventArgs) Handles ButtonMeno.Click
+        Dim temp As Byte
+        Dim i As Byte
         Select Case Active
             Case 1
                 If FSX1.ImageIndex > 0 Then
@@ -362,74 +417,76 @@
                 End If
 
         End Select
-
+        temp = 0
+        For i = 25 To 36
+            temp = temp + bufFalli(i)
+        Next
+        If temp > 5 Then temp = 5
+        bufFalli(49) = temp
+        temp = 0
+        For i = 37 To 48
+            temp = temp + bufFalli(i)
+        Next
+        If temp > 5 Then temp = 5
+        bufFalli(50) = temp
+        Timer2.Interval = Val(My.Settings.Timeout)
         Timer2.Stop()
         Timer2.Start()
 
     End Sub
 
-    Private Sub NomeSX1_Click(sender As Object, e As EventArgs)
-        NomeSX1.BackColor = Color.Red
-        NomeSX2.Enabled = False
-        NomeSX3.Enabled = False
-        NomeSX4.Enabled = False
-        NomeSX5.Enabled = False
-        NomeSX6.Enabled = False
-        NomeSX7.Enabled = False
-        NomeSX8.Enabled = False
-        NomeSX9.Enabled = False
-        NomeSX10.Enabled = False
-        NomeSX11.Enabled = False
-        NomeSX12.Enabled = False
-        NomeDX1.Enabled = False
-        NomeDX2.Enabled = False
-        NomeDX3.Enabled = False
-        NomeDX4.Enabled = False
-        NomeDX5.Enabled = False
-        NomeDX6.Enabled = False
-        NomeDX7.Enabled = False
-        NomeDX8.Enabled = False
-        NomeDX9.Enabled = False
-        NomeDX10.Enabled = False
-        NomeDX11.Enabled = False
-        NomeDX12.Enabled = False
-        ButtonPiu.Enabled = True
-        ButtonMeno.Enabled = True
-        Timer2.Enabled = True
-        Active = 1
+    Private Sub Nome_Click(sender As Object, e As EventArgs) Handles NomeSX9.Click, NomeSX8.Click, NomeSX7.Click, NomeSX6.Click, NomeSX5.Click, NomeSX4.Click, NomeSX3.Click, NomeSX2.Click, NomeSX12.Click, NomeSX11.Click, NomeSX10.Click, NomeSX1.Click, NomeDX9.Click, NomeDX8.Click, NomeDX7.Click, NomeDX6.Click, NomeDX5.Click, NomeDX4.Click, NomeDX3.Click, NomeDX2.Click, NomeDX12.Click, NomeDX11.Click, NomeDX10.Click, NomeDX1.Click
+        If sender.tag = Active Then
+            Call Timer2_Tick(sender, e)
+        Else
+            NomeSX1.Enabled = False
+            NomeSX2.Enabled = False
+            NomeSX3.Enabled = False
+            NomeSX4.Enabled = False
+            NomeSX5.Enabled = False
+            NomeSX6.Enabled = False
+            NomeSX7.Enabled = False
+            NomeSX8.Enabled = False
+            NomeSX9.Enabled = False
+            NomeSX10.Enabled = False
+            NomeSX11.Enabled = False
+            NomeSX12.Enabled = False
+            NomeDX1.Enabled = False
+            NomeDX2.Enabled = False
+            NomeDX3.Enabled = False
+            NomeDX4.Enabled = False
+            NomeDX5.Enabled = False
+            NomeDX6.Enabled = False
+            NomeDX7.Enabled = False
+            NomeDX8.Enabled = False
+            NomeDX9.Enabled = False
+            NomeDX10.Enabled = False
+            NomeDX11.Enabled = False
+            NomeDX12.Enabled = False
+            ButtonPiu.Enabled = True
+            ButtonMeno.Enabled = True
+            Timer2.Interval = Val(My.Settings.Timeout)
+            Timer2.Enabled = True
+            sender.BackColor = Color.Red
+            sender.enabled = True
+            Active = sender.tag
+        End If
     End Sub
 
-    Private Sub Nome_Click(sender As Object, e As EventArgs) Handles NomeSX9.Click, NomeSX8.Click, NomeSX7.Click, NomeSX6.Click, NomeSX5.Click, NomeSX4.Click, NomeSX3.Click, NomeSX2.Click, NomeSX12.Click, NomeSX11.Click, NomeSX10.Click, NomeSX1.Click, NomeDX9.Click, NomeDX8.Click, NomeDX7.Click, NomeDX6.Click, NomeDX5.Click, NomeDX4.Click, NomeDX3.Click, NomeDX2.Click, NomeDX12.Click, NomeDX11.Click, NomeDX10.Click, NomeDX1.Click
-        NomeSX1.Enabled = False
-        NomeSX2.Enabled = False
-        NomeSX3.Enabled = False
-        NomeSX4.Enabled = False
-        NomeSX5.Enabled = False
-        NomeSX6.Enabled = False
-        NomeSX7.Enabled = False
-        NomeSX8.Enabled = False
-        NomeSX9.Enabled = False
-        NomeSX10.Enabled = False
-        NomeSX11.Enabled = False
-        NomeSX12.Enabled = False
-        NomeDX1.Enabled = False
-        NomeDX2.Enabled = False
-        NomeDX3.Enabled = False
-        NomeDX4.Enabled = False
-        NomeDX5.Enabled = False
-        NomeDX6.Enabled = False
-        NomeDX7.Enabled = False
-        NomeDX8.Enabled = False
-        NomeDX9.Enabled = False
-        NomeDX10.Enabled = False
-        NomeDX11.Enabled = False
-        NomeDX12.Enabled = False
-        ButtonPiu.Enabled = True
-        ButtonMeno.Enabled = True
-        Timer2.Enabled = True
-        sender.BackColor = Color.Red
+    Private Sub btnBonusSX_Click(sender As Object, e As EventArgs) Handles btnBonusSX.Click
+        If btnBonusSX.BackColor = SystemColors.Control Then
+            btnBonusSX.BackColor = Color.GreenYellow
+        Else
+            btnBonusSX.BackColor = SystemColors.Control
+        End If
 
-        Active = sender.tag
+    End Sub
 
+    Private Sub btnBonusDX_Click(sender As Object, e As EventArgs) Handles btnBonusDX.Click
+        If btnBonusDX.BackColor = SystemColors.Control Then
+            btnBonusDX.BackColor = Color.GreenYellow
+        Else
+            btnBonusDX.BackColor = SystemColors.Control
+        End If
     End Sub
 End Class

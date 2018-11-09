@@ -36,20 +36,21 @@ Partial Class MainForm
         Me.NomeSX11 = New System.Windows.Forms.Button()
         Me.NomeSX10 = New System.Windows.Forms.Button()
         Me.NomeSX9 = New System.Windows.Forms.Button()
-        Me.NumeroL1 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
-        Me.Button11 = New System.Windows.Forms.Button()
+        Me.NumeroSX1 = New System.Windows.Forms.Button()
+        Me.NumeroSX2 = New System.Windows.Forms.Button()
+        Me.NumeroSX4 = New System.Windows.Forms.Button()
+        Me.NumeroSX3 = New System.Windows.Forms.Button()
+        Me.NumeroSX6 = New System.Windows.Forms.Button()
+        Me.NumeroSX5 = New System.Windows.Forms.Button()
+        Me.NumeroSX8 = New System.Windows.Forms.Button()
+        Me.NumeroSX7 = New System.Windows.Forms.Button()
+        Me.NumeroSX10 = New System.Windows.Forms.Button()
+        Me.NumeroSX9 = New System.Windows.Forms.Button()
+        Me.NumeroSX12 = New System.Windows.Forms.Button()
+        Me.NumeroSX11 = New System.Windows.Forms.Button()
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.FSX1 = New System.Windows.Forms.Button()
+        Me.ImageList2 = New System.Windows.Forms.ImageList(Me.components)
         Me.FSX2 = New System.Windows.Forms.Button()
         Me.FSX3 = New System.Windows.Forms.Button()
         Me.FSX4 = New System.Windows.Forms.Button()
@@ -85,23 +86,23 @@ Partial Class MainForm
         Me.NomeDX3 = New System.Windows.Forms.Button()
         Me.NomeDX2 = New System.Windows.Forms.Button()
         Me.NomeDX1 = New System.Windows.Forms.Button()
-        Me.Locali = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.NomeSX = New System.Windows.Forms.Label()
+        Me.NomeDX = New System.Windows.Forms.Label()
         Me.ButtonPiu = New System.Windows.Forms.Button()
         Me.Button61 = New System.Windows.Forms.Button()
         Me.ButtonMeno = New System.Windows.Forms.Button()
-        Me.Button24 = New System.Windows.Forms.Button()
-        Me.Button25 = New System.Windows.Forms.Button()
-        Me.Button26 = New System.Windows.Forms.Button()
-        Me.Button27 = New System.Windows.Forms.Button()
-        Me.Button28 = New System.Windows.Forms.Button()
-        Me.Button29 = New System.Windows.Forms.Button()
-        Me.Button30 = New System.Windows.Forms.Button()
-        Me.Button31 = New System.Windows.Forms.Button()
-        Me.Button32 = New System.Windows.Forms.Button()
-        Me.Button33 = New System.Windows.Forms.Button()
-        Me.Button34 = New System.Windows.Forms.Button()
-        Me.Button35 = New System.Windows.Forms.Button()
+        Me.NumeroDX12 = New System.Windows.Forms.Button()
+        Me.NumeroDX11 = New System.Windows.Forms.Button()
+        Me.NumeroDX10 = New System.Windows.Forms.Button()
+        Me.NumeroDX9 = New System.Windows.Forms.Button()
+        Me.NumeroDX8 = New System.Windows.Forms.Button()
+        Me.NumeroDX7 = New System.Windows.Forms.Button()
+        Me.NumeroDX6 = New System.Windows.Forms.Button()
+        Me.NumeroDX5 = New System.Windows.Forms.Button()
+        Me.NumeroDX4 = New System.Windows.Forms.Button()
+        Me.NumeroDX3 = New System.Windows.Forms.Button()
+        Me.NumeroDX2 = New System.Windows.Forms.Button()
+        Me.NumeroDX1 = New System.Windows.Forms.Button()
         Me.SerialPort1 = New System.IO.Ports.SerialPort(Me.components)
         Me.btnEsci = New System.Windows.Forms.Button()
         Me.lblStatus1 = New System.Windows.Forms.Label()
@@ -109,6 +110,8 @@ Partial Class MainForm
         Me.SerialPort2 = New System.IO.Ports.SerialPort(Me.components)
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+        Me.btnBonusSX = New System.Windows.Forms.Button()
+        Me.btnBonusDX = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'NomeSX1
@@ -255,137 +258,137 @@ Partial Class MainForm
         Me.NomeSX9.Text = "PETRUCCI"
         Me.NomeSX9.UseVisualStyleBackColor = True
         '
-        'NumeroL1
+        'NumeroSX1
         '
-        Me.NumeroL1.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NumeroL1.Location = New System.Drawing.Point(24, 84)
-        Me.NumeroL1.Margin = New System.Windows.Forms.Padding(0)
-        Me.NumeroL1.Name = "NumeroL1"
-        Me.NumeroL1.Size = New System.Drawing.Size(70, 50)
-        Me.NumeroL1.TabIndex = 12
-        Me.NumeroL1.Text = "02"
-        Me.NumeroL1.UseVisualStyleBackColor = True
+        Me.NumeroSX1.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NumeroSX1.Location = New System.Drawing.Point(24, 84)
+        Me.NumeroSX1.Margin = New System.Windows.Forms.Padding(0)
+        Me.NumeroSX1.Name = "NumeroSX1"
+        Me.NumeroSX1.Size = New System.Drawing.Size(70, 50)
+        Me.NumeroSX1.TabIndex = 12
+        Me.NumeroSX1.Text = "04"
+        Me.NumeroSX1.UseVisualStyleBackColor = True
         '
-        'Button1
+        'NumeroSX2
         '
-        Me.Button1.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(24, 134)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(70, 50)
-        Me.Button1.TabIndex = 13
-        Me.Button1.Text = "06"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.NumeroSX2.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NumeroSX2.Location = New System.Drawing.Point(24, 134)
+        Me.NumeroSX2.Margin = New System.Windows.Forms.Padding(0)
+        Me.NumeroSX2.Name = "NumeroSX2"
+        Me.NumeroSX2.Size = New System.Drawing.Size(70, 50)
+        Me.NumeroSX2.TabIndex = 13
+        Me.NumeroSX2.Text = "05"
+        Me.NumeroSX2.UseVisualStyleBackColor = True
         '
-        'Button2
+        'NumeroSX4
         '
-        Me.Button2.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(24, 234)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(70, 50)
-        Me.Button2.TabIndex = 15
-        Me.Button2.Text = "08"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.NumeroSX4.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NumeroSX4.Location = New System.Drawing.Point(24, 234)
+        Me.NumeroSX4.Margin = New System.Windows.Forms.Padding(0)
+        Me.NumeroSX4.Name = "NumeroSX4"
+        Me.NumeroSX4.Size = New System.Drawing.Size(70, 50)
+        Me.NumeroSX4.TabIndex = 15
+        Me.NumeroSX4.Text = "07"
+        Me.NumeroSX4.UseVisualStyleBackColor = True
         '
-        'Button3
+        'NumeroSX3
         '
-        Me.Button3.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(24, 184)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(70, 50)
-        Me.Button3.TabIndex = 14
-        Me.Button3.Text = "07"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.NumeroSX3.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NumeroSX3.Location = New System.Drawing.Point(24, 184)
+        Me.NumeroSX3.Margin = New System.Windows.Forms.Padding(0)
+        Me.NumeroSX3.Name = "NumeroSX3"
+        Me.NumeroSX3.Size = New System.Drawing.Size(70, 50)
+        Me.NumeroSX3.TabIndex = 14
+        Me.NumeroSX3.Text = "06"
+        Me.NumeroSX3.UseVisualStyleBackColor = True
         '
-        'Button4
+        'NumeroSX6
         '
-        Me.Button4.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(24, 334)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(70, 50)
-        Me.Button4.TabIndex = 17
-        Me.Button4.Text = "10"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.NumeroSX6.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NumeroSX6.Location = New System.Drawing.Point(24, 334)
+        Me.NumeroSX6.Margin = New System.Windows.Forms.Padding(0)
+        Me.NumeroSX6.Name = "NumeroSX6"
+        Me.NumeroSX6.Size = New System.Drawing.Size(70, 50)
+        Me.NumeroSX6.TabIndex = 17
+        Me.NumeroSX6.Text = "09"
+        Me.NumeroSX6.UseVisualStyleBackColor = True
         '
-        'Button5
+        'NumeroSX5
         '
-        Me.Button5.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.Location = New System.Drawing.Point(24, 284)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(70, 50)
-        Me.Button5.TabIndex = 16
-        Me.Button5.Text = "09"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.NumeroSX5.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NumeroSX5.Location = New System.Drawing.Point(24, 284)
+        Me.NumeroSX5.Margin = New System.Windows.Forms.Padding(0)
+        Me.NumeroSX5.Name = "NumeroSX5"
+        Me.NumeroSX5.Size = New System.Drawing.Size(70, 50)
+        Me.NumeroSX5.TabIndex = 16
+        Me.NumeroSX5.Text = "08"
+        Me.NumeroSX5.UseVisualStyleBackColor = True
         '
-        'Button6
+        'NumeroSX8
         '
-        Me.Button6.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(24, 434)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(70, 50)
-        Me.Button6.TabIndex = 19
-        Me.Button6.Text = "12"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.NumeroSX8.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NumeroSX8.Location = New System.Drawing.Point(24, 434)
+        Me.NumeroSX8.Margin = New System.Windows.Forms.Padding(0)
+        Me.NumeroSX8.Name = "NumeroSX8"
+        Me.NumeroSX8.Size = New System.Drawing.Size(70, 50)
+        Me.NumeroSX8.TabIndex = 19
+        Me.NumeroSX8.Text = "11"
+        Me.NumeroSX8.UseVisualStyleBackColor = True
         '
-        'Button7
+        'NumeroSX7
         '
-        Me.Button7.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.Location = New System.Drawing.Point(24, 384)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(70, 50)
-        Me.Button7.TabIndex = 18
-        Me.Button7.Text = "11"
-        Me.Button7.UseVisualStyleBackColor = True
+        Me.NumeroSX7.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NumeroSX7.Location = New System.Drawing.Point(24, 384)
+        Me.NumeroSX7.Margin = New System.Windows.Forms.Padding(0)
+        Me.NumeroSX7.Name = "NumeroSX7"
+        Me.NumeroSX7.Size = New System.Drawing.Size(70, 50)
+        Me.NumeroSX7.TabIndex = 18
+        Me.NumeroSX7.Text = "10"
+        Me.NumeroSX7.UseVisualStyleBackColor = True
         '
-        'Button8
+        'NumeroSX10
         '
-        Me.Button8.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button8.Location = New System.Drawing.Point(24, 534)
-        Me.Button8.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(70, 50)
-        Me.Button8.TabIndex = 21
-        Me.Button8.Text = "14"
-        Me.Button8.UseVisualStyleBackColor = True
+        Me.NumeroSX10.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NumeroSX10.Location = New System.Drawing.Point(24, 534)
+        Me.NumeroSX10.Margin = New System.Windows.Forms.Padding(0)
+        Me.NumeroSX10.Name = "NumeroSX10"
+        Me.NumeroSX10.Size = New System.Drawing.Size(70, 50)
+        Me.NumeroSX10.TabIndex = 21
+        Me.NumeroSX10.Text = "13"
+        Me.NumeroSX10.UseVisualStyleBackColor = True
         '
-        'Button9
+        'NumeroSX9
         '
-        Me.Button9.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button9.Location = New System.Drawing.Point(24, 484)
-        Me.Button9.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(70, 50)
-        Me.Button9.TabIndex = 20
-        Me.Button9.Text = "13"
-        Me.Button9.UseVisualStyleBackColor = True
+        Me.NumeroSX9.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NumeroSX9.Location = New System.Drawing.Point(24, 484)
+        Me.NumeroSX9.Margin = New System.Windows.Forms.Padding(0)
+        Me.NumeroSX9.Name = "NumeroSX9"
+        Me.NumeroSX9.Size = New System.Drawing.Size(70, 50)
+        Me.NumeroSX9.TabIndex = 20
+        Me.NumeroSX9.Text = "12"
+        Me.NumeroSX9.UseVisualStyleBackColor = True
         '
-        'Button10
+        'NumeroSX12
         '
-        Me.Button10.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button10.Location = New System.Drawing.Point(24, 634)
-        Me.Button10.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(70, 50)
-        Me.Button10.TabIndex = 23
-        Me.Button10.Text = "20"
-        Me.Button10.UseVisualStyleBackColor = True
+        Me.NumeroSX12.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NumeroSX12.Location = New System.Drawing.Point(24, 634)
+        Me.NumeroSX12.Margin = New System.Windows.Forms.Padding(0)
+        Me.NumeroSX12.Name = "NumeroSX12"
+        Me.NumeroSX12.Size = New System.Drawing.Size(70, 50)
+        Me.NumeroSX12.TabIndex = 23
+        Me.NumeroSX12.Text = "15"
+        Me.NumeroSX12.UseVisualStyleBackColor = True
         '
-        'Button11
+        'NumeroSX11
         '
-        Me.Button11.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button11.Location = New System.Drawing.Point(24, 584)
-        Me.Button11.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(70, 50)
-        Me.Button11.TabIndex = 22
-        Me.Button11.Text = "19"
-        Me.Button11.UseVisualStyleBackColor = True
+        Me.NumeroSX11.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NumeroSX11.Location = New System.Drawing.Point(24, 584)
+        Me.NumeroSX11.Margin = New System.Windows.Forms.Padding(0)
+        Me.NumeroSX11.Name = "NumeroSX11"
+        Me.NumeroSX11.Size = New System.Drawing.Size(70, 50)
+        Me.NumeroSX11.TabIndex = 22
+        Me.NumeroSX11.Text = "14"
+        Me.NumeroSX11.UseVisualStyleBackColor = True
         '
         'ImageList1
         '
@@ -402,7 +405,7 @@ Partial Class MainForm
         '
         Me.FSX1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.FSX1.ImageIndex = 0
-        Me.FSX1.ImageList = Me.ImageList1
+        Me.FSX1.ImageList = Me.ImageList2
         Me.FSX1.Location = New System.Drawing.Point(429, 84)
         Me.FSX1.Margin = New System.Windows.Forms.Padding(0)
         Me.FSX1.Name = "FSX1"
@@ -410,11 +413,22 @@ Partial Class MainForm
         Me.FSX1.TabIndex = 49
         Me.FSX1.UseVisualStyleBackColor = True
         '
+        'ImageList2
+        '
+        Me.ImageList2.ImageStream = CType(resources.GetObject("ImageList2.ImageStream"), System.Windows.Forms.ImageListStreamer)
+        Me.ImageList2.TransparentColor = System.Drawing.Color.Transparent
+        Me.ImageList2.Images.SetKeyName(0, "f0.png")
+        Me.ImageList2.Images.SetKeyName(1, "f1r.png")
+        Me.ImageList2.Images.SetKeyName(2, "f2r.png")
+        Me.ImageList2.Images.SetKeyName(3, "f3r.png")
+        Me.ImageList2.Images.SetKeyName(4, "f4r.png")
+        Me.ImageList2.Images.SetKeyName(5, "f5.png")
+        '
         'FSX2
         '
         Me.FSX2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.FSX2.ImageIndex = 0
-        Me.FSX2.ImageList = Me.ImageList1
+        Me.FSX2.ImageList = Me.ImageList2
         Me.FSX2.Location = New System.Drawing.Point(429, 134)
         Me.FSX2.Margin = New System.Windows.Forms.Padding(0)
         Me.FSX2.Name = "FSX2"
@@ -426,7 +440,7 @@ Partial Class MainForm
         '
         Me.FSX3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.FSX3.ImageIndex = 0
-        Me.FSX3.ImageList = Me.ImageList1
+        Me.FSX3.ImageList = Me.ImageList2
         Me.FSX3.Location = New System.Drawing.Point(429, 184)
         Me.FSX3.Margin = New System.Windows.Forms.Padding(0)
         Me.FSX3.Name = "FSX3"
@@ -438,7 +452,7 @@ Partial Class MainForm
         '
         Me.FSX4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.FSX4.ImageIndex = 0
-        Me.FSX4.ImageList = Me.ImageList1
+        Me.FSX4.ImageList = Me.ImageList2
         Me.FSX4.Location = New System.Drawing.Point(429, 234)
         Me.FSX4.Margin = New System.Windows.Forms.Padding(0)
         Me.FSX4.Name = "FSX4"
@@ -450,7 +464,7 @@ Partial Class MainForm
         '
         Me.FSX8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.FSX8.ImageIndex = 0
-        Me.FSX8.ImageList = Me.ImageList1
+        Me.FSX8.ImageList = Me.ImageList2
         Me.FSX8.Location = New System.Drawing.Point(429, 434)
         Me.FSX8.Margin = New System.Windows.Forms.Padding(0)
         Me.FSX8.Name = "FSX8"
@@ -462,7 +476,7 @@ Partial Class MainForm
         '
         Me.FSX7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.FSX7.ImageIndex = 0
-        Me.FSX7.ImageList = Me.ImageList1
+        Me.FSX7.ImageList = Me.ImageList2
         Me.FSX7.Location = New System.Drawing.Point(429, 384)
         Me.FSX7.Margin = New System.Windows.Forms.Padding(0)
         Me.FSX7.Name = "FSX7"
@@ -474,7 +488,7 @@ Partial Class MainForm
         '
         Me.FSX6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.FSX6.ImageIndex = 0
-        Me.FSX6.ImageList = Me.ImageList1
+        Me.FSX6.ImageList = Me.ImageList2
         Me.FSX6.Location = New System.Drawing.Point(429, 334)
         Me.FSX6.Margin = New System.Windows.Forms.Padding(0)
         Me.FSX6.Name = "FSX6"
@@ -486,7 +500,7 @@ Partial Class MainForm
         '
         Me.FSX5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.FSX5.ImageIndex = 0
-        Me.FSX5.ImageList = Me.ImageList1
+        Me.FSX5.ImageList = Me.ImageList2
         Me.FSX5.Location = New System.Drawing.Point(429, 284)
         Me.FSX5.Margin = New System.Windows.Forms.Padding(0)
         Me.FSX5.Name = "FSX5"
@@ -498,7 +512,7 @@ Partial Class MainForm
         '
         Me.FSX12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.FSX12.ImageIndex = 0
-        Me.FSX12.ImageList = Me.ImageList1
+        Me.FSX12.ImageList = Me.ImageList2
         Me.FSX12.Location = New System.Drawing.Point(429, 634)
         Me.FSX12.Margin = New System.Windows.Forms.Padding(0)
         Me.FSX12.Name = "FSX12"
@@ -510,7 +524,7 @@ Partial Class MainForm
         '
         Me.FSX11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.FSX11.ImageIndex = 0
-        Me.FSX11.ImageList = Me.ImageList1
+        Me.FSX11.ImageList = Me.ImageList2
         Me.FSX11.Location = New System.Drawing.Point(429, 584)
         Me.FSX11.Margin = New System.Windows.Forms.Padding(0)
         Me.FSX11.Name = "FSX11"
@@ -522,7 +536,7 @@ Partial Class MainForm
         '
         Me.FSX10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.FSX10.ImageIndex = 0
-        Me.FSX10.ImageList = Me.ImageList1
+        Me.FSX10.ImageList = Me.ImageList2
         Me.FSX10.Location = New System.Drawing.Point(429, 534)
         Me.FSX10.Margin = New System.Windows.Forms.Padding(0)
         Me.FSX10.Name = "FSX10"
@@ -534,7 +548,7 @@ Partial Class MainForm
         '
         Me.FSX9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.FSX9.ImageIndex = 0
-        Me.FSX9.ImageList = Me.ImageList1
+        Me.FSX9.ImageList = Me.ImageList2
         Me.FSX9.Location = New System.Drawing.Point(429, 484)
         Me.FSX9.Margin = New System.Windows.Forms.Padding(0)
         Me.FSX9.Name = "FSX9"
@@ -547,7 +561,7 @@ Partial Class MainForm
         Me.FDX12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.FDX12.ImageIndex = 0
         Me.FDX12.ImageList = Me.ImageList1
-        Me.FDX12.Location = New System.Drawing.Point(1079, 634)
+        Me.FDX12.Location = New System.Drawing.Point(671, 634)
         Me.FDX12.Margin = New System.Windows.Forms.Padding(0)
         Me.FDX12.Name = "FDX12"
         Me.FDX12.Size = New System.Drawing.Size(160, 50)
@@ -559,7 +573,7 @@ Partial Class MainForm
         Me.FDX11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.FDX11.ImageIndex = 0
         Me.FDX11.ImageList = Me.ImageList1
-        Me.FDX11.Location = New System.Drawing.Point(1079, 584)
+        Me.FDX11.Location = New System.Drawing.Point(671, 584)
         Me.FDX11.Margin = New System.Windows.Forms.Padding(0)
         Me.FDX11.Name = "FDX11"
         Me.FDX11.Size = New System.Drawing.Size(160, 50)
@@ -571,7 +585,7 @@ Partial Class MainForm
         Me.FDX10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.FDX10.ImageIndex = 0
         Me.FDX10.ImageList = Me.ImageList1
-        Me.FDX10.Location = New System.Drawing.Point(1079, 534)
+        Me.FDX10.Location = New System.Drawing.Point(671, 534)
         Me.FDX10.Margin = New System.Windows.Forms.Padding(0)
         Me.FDX10.Name = "FDX10"
         Me.FDX10.Size = New System.Drawing.Size(160, 50)
@@ -583,7 +597,7 @@ Partial Class MainForm
         Me.FDX9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.FDX9.ImageIndex = 0
         Me.FDX9.ImageList = Me.ImageList1
-        Me.FDX9.Location = New System.Drawing.Point(1079, 484)
+        Me.FDX9.Location = New System.Drawing.Point(671, 484)
         Me.FDX9.Margin = New System.Windows.Forms.Padding(0)
         Me.FDX9.Name = "FDX9"
         Me.FDX9.Size = New System.Drawing.Size(160, 50)
@@ -595,7 +609,7 @@ Partial Class MainForm
         Me.FDX8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.FDX8.ImageIndex = 0
         Me.FDX8.ImageList = Me.ImageList1
-        Me.FDX8.Location = New System.Drawing.Point(1079, 434)
+        Me.FDX8.Location = New System.Drawing.Point(671, 434)
         Me.FDX8.Margin = New System.Windows.Forms.Padding(0)
         Me.FDX8.Name = "FDX8"
         Me.FDX8.Size = New System.Drawing.Size(160, 50)
@@ -607,7 +621,7 @@ Partial Class MainForm
         Me.FDX7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.FDX7.ImageIndex = 0
         Me.FDX7.ImageList = Me.ImageList1
-        Me.FDX7.Location = New System.Drawing.Point(1079, 384)
+        Me.FDX7.Location = New System.Drawing.Point(671, 384)
         Me.FDX7.Margin = New System.Windows.Forms.Padding(0)
         Me.FDX7.Name = "FDX7"
         Me.FDX7.Size = New System.Drawing.Size(160, 50)
@@ -619,7 +633,7 @@ Partial Class MainForm
         Me.FDX6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.FDX6.ImageIndex = 0
         Me.FDX6.ImageList = Me.ImageList1
-        Me.FDX6.Location = New System.Drawing.Point(1079, 334)
+        Me.FDX6.Location = New System.Drawing.Point(671, 334)
         Me.FDX6.Margin = New System.Windows.Forms.Padding(0)
         Me.FDX6.Name = "FDX6"
         Me.FDX6.Size = New System.Drawing.Size(160, 50)
@@ -631,7 +645,7 @@ Partial Class MainForm
         Me.FDX5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.FDX5.ImageIndex = 0
         Me.FDX5.ImageList = Me.ImageList1
-        Me.FDX5.Location = New System.Drawing.Point(1079, 284)
+        Me.FDX5.Location = New System.Drawing.Point(671, 284)
         Me.FDX5.Margin = New System.Windows.Forms.Padding(0)
         Me.FDX5.Name = "FDX5"
         Me.FDX5.Size = New System.Drawing.Size(160, 50)
@@ -643,7 +657,7 @@ Partial Class MainForm
         Me.FDX4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.FDX4.ImageIndex = 0
         Me.FDX4.ImageList = Me.ImageList1
-        Me.FDX4.Location = New System.Drawing.Point(1079, 234)
+        Me.FDX4.Location = New System.Drawing.Point(671, 234)
         Me.FDX4.Margin = New System.Windows.Forms.Padding(0)
         Me.FDX4.Name = "FDX4"
         Me.FDX4.Size = New System.Drawing.Size(160, 50)
@@ -655,7 +669,7 @@ Partial Class MainForm
         Me.FDX3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.FDX3.ImageIndex = 0
         Me.FDX3.ImageList = Me.ImageList1
-        Me.FDX3.Location = New System.Drawing.Point(1079, 184)
+        Me.FDX3.Location = New System.Drawing.Point(671, 184)
         Me.FDX3.Margin = New System.Windows.Forms.Padding(0)
         Me.FDX3.Name = "FDX3"
         Me.FDX3.Size = New System.Drawing.Size(160, 50)
@@ -667,7 +681,7 @@ Partial Class MainForm
         Me.FDX2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.FDX2.ImageIndex = 0
         Me.FDX2.ImageList = Me.ImageList1
-        Me.FDX2.Location = New System.Drawing.Point(1079, 134)
+        Me.FDX2.Location = New System.Drawing.Point(671, 134)
         Me.FDX2.Margin = New System.Windows.Forms.Padding(0)
         Me.FDX2.Name = "FDX2"
         Me.FDX2.Size = New System.Drawing.Size(160, 50)
@@ -679,7 +693,7 @@ Partial Class MainForm
         Me.FDX1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.FDX1.ImageIndex = 0
         Me.FDX1.ImageList = Me.ImageList1
-        Me.FDX1.Location = New System.Drawing.Point(1079, 84)
+        Me.FDX1.Location = New System.Drawing.Point(671, 84)
         Me.FDX1.Margin = New System.Windows.Forms.Padding(0)
         Me.FDX1.Name = "FDX1"
         Me.FDX1.Size = New System.Drawing.Size(160, 50)
@@ -689,7 +703,7 @@ Partial Class MainForm
         'NomeDX12
         '
         Me.NomeDX12.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NomeDX12.Location = New System.Drawing.Point(744, 634)
+        Me.NomeDX12.Location = New System.Drawing.Point(901, 634)
         Me.NomeDX12.Margin = New System.Windows.Forms.Padding(0)
         Me.NomeDX12.Name = "NomeDX12"
         Me.NomeDX12.Size = New System.Drawing.Size(335, 50)
@@ -701,7 +715,7 @@ Partial Class MainForm
         'NomeDX11
         '
         Me.NomeDX11.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NomeDX11.Location = New System.Drawing.Point(744, 584)
+        Me.NomeDX11.Location = New System.Drawing.Point(901, 584)
         Me.NomeDX11.Margin = New System.Windows.Forms.Padding(0)
         Me.NomeDX11.Name = "NomeDX11"
         Me.NomeDX11.Size = New System.Drawing.Size(335, 50)
@@ -713,7 +727,7 @@ Partial Class MainForm
         'NomeDX10
         '
         Me.NomeDX10.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NomeDX10.Location = New System.Drawing.Point(744, 534)
+        Me.NomeDX10.Location = New System.Drawing.Point(901, 534)
         Me.NomeDX10.Margin = New System.Windows.Forms.Padding(0)
         Me.NomeDX10.Name = "NomeDX10"
         Me.NomeDX10.Size = New System.Drawing.Size(335, 50)
@@ -725,7 +739,7 @@ Partial Class MainForm
         'NomeDX9
         '
         Me.NomeDX9.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NomeDX9.Location = New System.Drawing.Point(744, 484)
+        Me.NomeDX9.Location = New System.Drawing.Point(901, 484)
         Me.NomeDX9.Margin = New System.Windows.Forms.Padding(0)
         Me.NomeDX9.Name = "NomeDX9"
         Me.NomeDX9.Size = New System.Drawing.Size(335, 50)
@@ -737,7 +751,7 @@ Partial Class MainForm
         'NomeDX8
         '
         Me.NomeDX8.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NomeDX8.Location = New System.Drawing.Point(744, 434)
+        Me.NomeDX8.Location = New System.Drawing.Point(901, 434)
         Me.NomeDX8.Margin = New System.Windows.Forms.Padding(0)
         Me.NomeDX8.Name = "NomeDX8"
         Me.NomeDX8.Size = New System.Drawing.Size(335, 50)
@@ -749,7 +763,7 @@ Partial Class MainForm
         'NomeDX7
         '
         Me.NomeDX7.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NomeDX7.Location = New System.Drawing.Point(744, 384)
+        Me.NomeDX7.Location = New System.Drawing.Point(901, 384)
         Me.NomeDX7.Margin = New System.Windows.Forms.Padding(0)
         Me.NomeDX7.Name = "NomeDX7"
         Me.NomeDX7.Size = New System.Drawing.Size(335, 50)
@@ -761,7 +775,7 @@ Partial Class MainForm
         'NomeDX6
         '
         Me.NomeDX6.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NomeDX6.Location = New System.Drawing.Point(744, 334)
+        Me.NomeDX6.Location = New System.Drawing.Point(901, 334)
         Me.NomeDX6.Margin = New System.Windows.Forms.Padding(0)
         Me.NomeDX6.Name = "NomeDX6"
         Me.NomeDX6.Size = New System.Drawing.Size(335, 50)
@@ -773,7 +787,7 @@ Partial Class MainForm
         'NomeDX5
         '
         Me.NomeDX5.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NomeDX5.Location = New System.Drawing.Point(744, 284)
+        Me.NomeDX5.Location = New System.Drawing.Point(901, 284)
         Me.NomeDX5.Margin = New System.Windows.Forms.Padding(0)
         Me.NomeDX5.Name = "NomeDX5"
         Me.NomeDX5.Size = New System.Drawing.Size(335, 50)
@@ -785,7 +799,7 @@ Partial Class MainForm
         'NomeDX4
         '
         Me.NomeDX4.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NomeDX4.Location = New System.Drawing.Point(744, 234)
+        Me.NomeDX4.Location = New System.Drawing.Point(901, 234)
         Me.NomeDX4.Margin = New System.Windows.Forms.Padding(0)
         Me.NomeDX4.Name = "NomeDX4"
         Me.NomeDX4.Size = New System.Drawing.Size(335, 50)
@@ -797,7 +811,7 @@ Partial Class MainForm
         'NomeDX3
         '
         Me.NomeDX3.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NomeDX3.Location = New System.Drawing.Point(744, 184)
+        Me.NomeDX3.Location = New System.Drawing.Point(901, 184)
         Me.NomeDX3.Margin = New System.Windows.Forms.Padding(0)
         Me.NomeDX3.Name = "NomeDX3"
         Me.NomeDX3.Size = New System.Drawing.Size(335, 50)
@@ -809,7 +823,7 @@ Partial Class MainForm
         'NomeDX2
         '
         Me.NomeDX2.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NomeDX2.Location = New System.Drawing.Point(744, 134)
+        Me.NomeDX2.Location = New System.Drawing.Point(901, 134)
         Me.NomeDX2.Margin = New System.Windows.Forms.Padding(0)
         Me.NomeDX2.Name = "NomeDX2"
         Me.NomeDX2.Size = New System.Drawing.Size(335, 50)
@@ -821,7 +835,7 @@ Partial Class MainForm
         'NomeDX1
         '
         Me.NomeDX1.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NomeDX1.Location = New System.Drawing.Point(744, 84)
+        Me.NomeDX1.Location = New System.Drawing.Point(901, 84)
         Me.NomeDX1.Margin = New System.Windows.Forms.Padding(0)
         Me.NomeDX1.Name = "NomeDX1"
         Me.NomeDX1.Size = New System.Drawing.Size(335, 50)
@@ -830,27 +844,27 @@ Partial Class MainForm
         Me.NomeDX1.Text = "WILTSHIRE"
         Me.NomeDX1.UseVisualStyleBackColor = True
         '
-        'Locali
+        'NomeSX
         '
-        Me.Locali.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Locali.Font = New System.Drawing.Font("Courier New", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Locali.Location = New System.Drawing.Point(26, 19)
-        Me.Locali.Name = "Locali"
-        Me.Locali.Size = New System.Drawing.Size(563, 55)
-        Me.Locali.TabIndex = 97
-        Me.Locali.Text = "FAENZA"
-        Me.Locali.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.NomeSX.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.NomeSX.Font = New System.Drawing.Font("Courier New", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NomeSX.Location = New System.Drawing.Point(26, 19)
+        Me.NomeSX.Name = "NomeSX"
+        Me.NomeSX.Size = New System.Drawing.Size(403, 55)
+        Me.NomeSX.TabIndex = 97
+        Me.NomeSX.Text = "FAENZA"
+        Me.NomeSX.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'Label1
+        'NomeDX
         '
-        Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label1.Font = New System.Drawing.Font("Courier New", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(674, 19)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(563, 55)
-        Me.Label1.TabIndex = 98
-        Me.Label1.Text = "IMOLA"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.NomeDX.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.NomeDX.Font = New System.Drawing.Font("Courier New", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NomeDX.Location = New System.Drawing.Point(833, 19)
+        Me.NomeDX.Name = "NomeDX"
+        Me.NomeDX.Size = New System.Drawing.Size(403, 55)
+        Me.NomeDX.TabIndex = 98
+        Me.NomeDX.Text = "IMOLA"
+        Me.NomeDX.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'ButtonPiu
         '
@@ -884,137 +898,137 @@ Partial Class MainForm
         Me.ButtonMeno.Text = "-"
         Me.ButtonMeno.UseVisualStyleBackColor = True
         '
-        'Button24
+        'NumeroDX12
         '
-        Me.Button24.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button24.Location = New System.Drawing.Point(674, 634)
-        Me.Button24.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button24.Name = "Button24"
-        Me.Button24.Size = New System.Drawing.Size(70, 50)
-        Me.Button24.TabIndex = 114
-        Me.Button24.Text = "99"
-        Me.Button24.UseVisualStyleBackColor = True
+        Me.NumeroDX12.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NumeroDX12.Location = New System.Drawing.Point(831, 634)
+        Me.NumeroDX12.Margin = New System.Windows.Forms.Padding(0)
+        Me.NumeroDX12.Name = "NumeroDX12"
+        Me.NumeroDX12.Size = New System.Drawing.Size(70, 50)
+        Me.NumeroDX12.TabIndex = 114
+        Me.NumeroDX12.Text = "15"
+        Me.NumeroDX12.UseVisualStyleBackColor = True
         '
-        'Button25
+        'NumeroDX11
         '
-        Me.Button25.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button25.Location = New System.Drawing.Point(674, 584)
-        Me.Button25.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button25.Name = "Button25"
-        Me.Button25.Size = New System.Drawing.Size(70, 50)
-        Me.Button25.TabIndex = 113
-        Me.Button25.Text = "42"
-        Me.Button25.UseVisualStyleBackColor = True
+        Me.NumeroDX11.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NumeroDX11.Location = New System.Drawing.Point(831, 584)
+        Me.NumeroDX11.Margin = New System.Windows.Forms.Padding(0)
+        Me.NumeroDX11.Name = "NumeroDX11"
+        Me.NumeroDX11.Size = New System.Drawing.Size(70, 50)
+        Me.NumeroDX11.TabIndex = 113
+        Me.NumeroDX11.Text = "14"
+        Me.NumeroDX11.UseVisualStyleBackColor = True
         '
-        'Button26
+        'NumeroDX10
         '
-        Me.Button26.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button26.Location = New System.Drawing.Point(674, 534)
-        Me.Button26.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button26.Name = "Button26"
-        Me.Button26.Size = New System.Drawing.Size(70, 50)
-        Me.Button26.TabIndex = 112
-        Me.Button26.Text = "27"
-        Me.Button26.UseVisualStyleBackColor = True
+        Me.NumeroDX10.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NumeroDX10.Location = New System.Drawing.Point(831, 534)
+        Me.NumeroDX10.Margin = New System.Windows.Forms.Padding(0)
+        Me.NumeroDX10.Name = "NumeroDX10"
+        Me.NumeroDX10.Size = New System.Drawing.Size(70, 50)
+        Me.NumeroDX10.TabIndex = 112
+        Me.NumeroDX10.Text = "13"
+        Me.NumeroDX10.UseVisualStyleBackColor = True
         '
-        'Button27
+        'NumeroDX9
         '
-        Me.Button27.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button27.Location = New System.Drawing.Point(674, 484)
-        Me.Button27.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button27.Name = "Button27"
-        Me.Button27.Size = New System.Drawing.Size(70, 50)
-        Me.Button27.TabIndex = 111
-        Me.Button27.Text = "17"
-        Me.Button27.UseVisualStyleBackColor = True
+        Me.NumeroDX9.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NumeroDX9.Location = New System.Drawing.Point(831, 484)
+        Me.NumeroDX9.Margin = New System.Windows.Forms.Padding(0)
+        Me.NumeroDX9.Name = "NumeroDX9"
+        Me.NumeroDX9.Size = New System.Drawing.Size(70, 50)
+        Me.NumeroDX9.TabIndex = 111
+        Me.NumeroDX9.Text = "12"
+        Me.NumeroDX9.UseVisualStyleBackColor = True
         '
-        'Button28
+        'NumeroDX8
         '
-        Me.Button28.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button28.Location = New System.Drawing.Point(674, 434)
-        Me.Button28.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button28.Name = "Button28"
-        Me.Button28.Size = New System.Drawing.Size(70, 50)
-        Me.Button28.TabIndex = 110
-        Me.Button28.Text = "15"
-        Me.Button28.UseVisualStyleBackColor = True
+        Me.NumeroDX8.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NumeroDX8.Location = New System.Drawing.Point(831, 434)
+        Me.NumeroDX8.Margin = New System.Windows.Forms.Padding(0)
+        Me.NumeroDX8.Name = "NumeroDX8"
+        Me.NumeroDX8.Size = New System.Drawing.Size(70, 50)
+        Me.NumeroDX8.TabIndex = 110
+        Me.NumeroDX8.Text = "11"
+        Me.NumeroDX8.UseVisualStyleBackColor = True
         '
-        'Button29
+        'NumeroDX7
         '
-        Me.Button29.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button29.Location = New System.Drawing.Point(674, 384)
-        Me.Button29.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button29.Name = "Button29"
-        Me.Button29.Size = New System.Drawing.Size(70, 50)
-        Me.Button29.TabIndex = 109
-        Me.Button29.Text = "12"
-        Me.Button29.UseVisualStyleBackColor = True
+        Me.NumeroDX7.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NumeroDX7.Location = New System.Drawing.Point(831, 384)
+        Me.NumeroDX7.Margin = New System.Windows.Forms.Padding(0)
+        Me.NumeroDX7.Name = "NumeroDX7"
+        Me.NumeroDX7.Size = New System.Drawing.Size(70, 50)
+        Me.NumeroDX7.TabIndex = 109
+        Me.NumeroDX7.Text = "10"
+        Me.NumeroDX7.UseVisualStyleBackColor = True
         '
-        'Button30
+        'NumeroDX6
         '
-        Me.Button30.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button30.Location = New System.Drawing.Point(674, 334)
-        Me.Button30.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button30.Name = "Button30"
-        Me.Button30.Size = New System.Drawing.Size(70, 50)
-        Me.Button30.TabIndex = 108
-        Me.Button30.Text = "11"
-        Me.Button30.UseVisualStyleBackColor = True
+        Me.NumeroDX6.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NumeroDX6.Location = New System.Drawing.Point(831, 334)
+        Me.NumeroDX6.Margin = New System.Windows.Forms.Padding(0)
+        Me.NumeroDX6.Name = "NumeroDX6"
+        Me.NumeroDX6.Size = New System.Drawing.Size(70, 50)
+        Me.NumeroDX6.TabIndex = 108
+        Me.NumeroDX6.Text = "09"
+        Me.NumeroDX6.UseVisualStyleBackColor = True
         '
-        'Button31
+        'NumeroDX5
         '
-        Me.Button31.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button31.Location = New System.Drawing.Point(674, 284)
-        Me.Button31.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button31.Name = "Button31"
-        Me.Button31.Size = New System.Drawing.Size(70, 50)
-        Me.Button31.TabIndex = 107
-        Me.Button31.Text = "09"
-        Me.Button31.UseVisualStyleBackColor = True
+        Me.NumeroDX5.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NumeroDX5.Location = New System.Drawing.Point(831, 284)
+        Me.NumeroDX5.Margin = New System.Windows.Forms.Padding(0)
+        Me.NumeroDX5.Name = "NumeroDX5"
+        Me.NumeroDX5.Size = New System.Drawing.Size(70, 50)
+        Me.NumeroDX5.TabIndex = 107
+        Me.NumeroDX5.Text = "08"
+        Me.NumeroDX5.UseVisualStyleBackColor = True
         '
-        'Button32
+        'NumeroDX4
         '
-        Me.Button32.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button32.Location = New System.Drawing.Point(674, 234)
-        Me.Button32.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button32.Name = "Button32"
-        Me.Button32.Size = New System.Drawing.Size(70, 50)
-        Me.Button32.TabIndex = 106
-        Me.Button32.Text = "05"
-        Me.Button32.UseVisualStyleBackColor = True
+        Me.NumeroDX4.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NumeroDX4.Location = New System.Drawing.Point(831, 234)
+        Me.NumeroDX4.Margin = New System.Windows.Forms.Padding(0)
+        Me.NumeroDX4.Name = "NumeroDX4"
+        Me.NumeroDX4.Size = New System.Drawing.Size(70, 50)
+        Me.NumeroDX4.TabIndex = 106
+        Me.NumeroDX4.Text = "07"
+        Me.NumeroDX4.UseVisualStyleBackColor = True
         '
-        'Button33
+        'NumeroDX3
         '
-        Me.Button33.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button33.Location = New System.Drawing.Point(674, 184)
-        Me.Button33.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button33.Name = "Button33"
-        Me.Button33.Size = New System.Drawing.Size(70, 50)
-        Me.Button33.TabIndex = 105
-        Me.Button33.Text = "04"
-        Me.Button33.UseVisualStyleBackColor = True
+        Me.NumeroDX3.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NumeroDX3.Location = New System.Drawing.Point(831, 184)
+        Me.NumeroDX3.Margin = New System.Windows.Forms.Padding(0)
+        Me.NumeroDX3.Name = "NumeroDX3"
+        Me.NumeroDX3.Size = New System.Drawing.Size(70, 50)
+        Me.NumeroDX3.TabIndex = 105
+        Me.NumeroDX3.Text = "06"
+        Me.NumeroDX3.UseVisualStyleBackColor = True
         '
-        'Button34
+        'NumeroDX2
         '
-        Me.Button34.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button34.Location = New System.Drawing.Point(674, 134)
-        Me.Button34.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button34.Name = "Button34"
-        Me.Button34.Size = New System.Drawing.Size(70, 50)
-        Me.Button34.TabIndex = 104
-        Me.Button34.Text = "03"
-        Me.Button34.UseVisualStyleBackColor = True
+        Me.NumeroDX2.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NumeroDX2.Location = New System.Drawing.Point(831, 134)
+        Me.NumeroDX2.Margin = New System.Windows.Forms.Padding(0)
+        Me.NumeroDX2.Name = "NumeroDX2"
+        Me.NumeroDX2.Size = New System.Drawing.Size(70, 50)
+        Me.NumeroDX2.TabIndex = 104
+        Me.NumeroDX2.Text = "05"
+        Me.NumeroDX2.UseVisualStyleBackColor = True
         '
-        'Button35
+        'NumeroDX1
         '
-        Me.Button35.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button35.Location = New System.Drawing.Point(674, 84)
-        Me.Button35.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button35.Name = "Button35"
-        Me.Button35.Size = New System.Drawing.Size(70, 50)
-        Me.Button35.TabIndex = 103
-        Me.Button35.Text = "02"
-        Me.Button35.UseVisualStyleBackColor = True
+        Me.NumeroDX1.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NumeroDX1.Location = New System.Drawing.Point(831, 84)
+        Me.NumeroDX1.Margin = New System.Windows.Forms.Padding(0)
+        Me.NumeroDX1.Name = "NumeroDX1"
+        Me.NumeroDX1.Size = New System.Drawing.Size(70, 50)
+        Me.NumeroDX1.TabIndex = 103
+        Me.NumeroDX1.Text = "04"
+        Me.NumeroDX1.UseVisualStyleBackColor = True
         '
         'SerialPort1
         '
@@ -1061,38 +1075,61 @@ Partial Class MainForm
         'Timer1
         '
         Me.Timer1.Enabled = True
-        Me.Timer1.Interval = 250
+        Me.Timer1.Interval = 750
         '
         'Timer2
         '
         Me.Timer2.Interval = 2000
         '
+        'btnBonusSX
+        '
+        Me.btnBonusSX.BackColor = System.Drawing.SystemColors.Control
+        Me.btnBonusSX.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBonusSX.Location = New System.Drawing.Point(435, 19)
+        Me.btnBonusSX.Name = "btnBonusSX"
+        Me.btnBonusSX.Size = New System.Drawing.Size(154, 55)
+        Me.btnBonusSX.TabIndex = 118
+        Me.btnBonusSX.Text = "BONUS"
+        Me.btnBonusSX.UseVisualStyleBackColor = False
+        '
+        'btnBonusDX
+        '
+        Me.btnBonusDX.Font = New System.Drawing.Font("Courier New", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBonusDX.Location = New System.Drawing.Point(671, 19)
+        Me.btnBonusDX.Name = "btnBonusDX"
+        Me.btnBonusDX.Size = New System.Drawing.Size(154, 55)
+        Me.btnBonusDX.TabIndex = 119
+        Me.btnBonusDX.Text = "BONUS"
+        Me.btnBonusDX.UseVisualStyleBackColor = True
+        '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1212, 709)
+        Me.ClientSize = New System.Drawing.Size(1246, 774)
         Me.ControlBox = False
+        Me.Controls.Add(Me.btnBonusDX)
+        Me.Controls.Add(Me.btnBonusSX)
         Me.Controls.Add(Me.lblStatus2)
         Me.Controls.Add(Me.lblStatus1)
         Me.Controls.Add(Me.btnEsci)
-        Me.Controls.Add(Me.Button24)
-        Me.Controls.Add(Me.Button25)
-        Me.Controls.Add(Me.Button26)
-        Me.Controls.Add(Me.Button27)
-        Me.Controls.Add(Me.Button28)
-        Me.Controls.Add(Me.Button29)
-        Me.Controls.Add(Me.Button30)
-        Me.Controls.Add(Me.Button31)
-        Me.Controls.Add(Me.Button32)
-        Me.Controls.Add(Me.Button33)
-        Me.Controls.Add(Me.Button34)
-        Me.Controls.Add(Me.Button35)
+        Me.Controls.Add(Me.NumeroDX12)
+        Me.Controls.Add(Me.NumeroDX11)
+        Me.Controls.Add(Me.NumeroDX10)
+        Me.Controls.Add(Me.NumeroDX9)
+        Me.Controls.Add(Me.NumeroDX8)
+        Me.Controls.Add(Me.NumeroDX7)
+        Me.Controls.Add(Me.NumeroDX6)
+        Me.Controls.Add(Me.NumeroDX5)
+        Me.Controls.Add(Me.NumeroDX4)
+        Me.Controls.Add(Me.NumeroDX3)
+        Me.Controls.Add(Me.NumeroDX2)
+        Me.Controls.Add(Me.NumeroDX1)
         Me.Controls.Add(Me.ButtonMeno)
         Me.Controls.Add(Me.Button61)
         Me.Controls.Add(Me.ButtonPiu)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Locali)
+        Me.Controls.Add(Me.NomeDX)
+        Me.Controls.Add(Me.NomeSX)
         Me.Controls.Add(Me.FDX12)
         Me.Controls.Add(Me.FDX11)
         Me.Controls.Add(Me.FDX10)
@@ -1129,18 +1166,18 @@ Partial Class MainForm
         Me.Controls.Add(Me.FSX3)
         Me.Controls.Add(Me.FSX2)
         Me.Controls.Add(Me.FSX1)
-        Me.Controls.Add(Me.Button10)
-        Me.Controls.Add(Me.Button11)
-        Me.Controls.Add(Me.Button8)
-        Me.Controls.Add(Me.Button9)
-        Me.Controls.Add(Me.Button6)
-        Me.Controls.Add(Me.Button7)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.NumeroL1)
+        Me.Controls.Add(Me.NumeroSX12)
+        Me.Controls.Add(Me.NumeroSX11)
+        Me.Controls.Add(Me.NumeroSX10)
+        Me.Controls.Add(Me.NumeroSX9)
+        Me.Controls.Add(Me.NumeroSX8)
+        Me.Controls.Add(Me.NumeroSX7)
+        Me.Controls.Add(Me.NumeroSX6)
+        Me.Controls.Add(Me.NumeroSX5)
+        Me.Controls.Add(Me.NumeroSX4)
+        Me.Controls.Add(Me.NumeroSX3)
+        Me.Controls.Add(Me.NumeroSX2)
+        Me.Controls.Add(Me.NumeroSX1)
         Me.Controls.Add(Me.NomeSX12)
         Me.Controls.Add(Me.NomeSX11)
         Me.Controls.Add(Me.NomeSX10)
@@ -1178,18 +1215,18 @@ Partial Class MainForm
     Friend WithEvents NomeSX11 As Button
     Friend WithEvents NomeSX10 As Button
     Friend WithEvents NomeSX9 As Button
-    Friend WithEvents NumeroL1 As Button
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Button7 As Button
-    Friend WithEvents Button8 As Button
-    Friend WithEvents Button9 As Button
-    Friend WithEvents Button10 As Button
-    Friend WithEvents Button11 As Button
+    Friend WithEvents NumeroSX1 As Button
+    Friend WithEvents NumeroSX2 As Button
+    Friend WithEvents NumeroSX4 As Button
+    Friend WithEvents NumeroSX3 As Button
+    Friend WithEvents NumeroSX6 As Button
+    Friend WithEvents NumeroSX5 As Button
+    Friend WithEvents NumeroSX8 As Button
+    Friend WithEvents NumeroSX7 As Button
+    Friend WithEvents NumeroSX10 As Button
+    Friend WithEvents NumeroSX9 As Button
+    Friend WithEvents NumeroSX12 As Button
+    Friend WithEvents NumeroSX11 As Button
     Friend WithEvents ImageList1 As ImageList
     Friend WithEvents FSX1 As Button
     Friend WithEvents FSX2 As Button
@@ -1227,23 +1264,23 @@ Partial Class MainForm
     Friend WithEvents NomeDX3 As Button
     Friend WithEvents NomeDX2 As Button
     Friend WithEvents NomeDX1 As Button
-    Friend WithEvents Locali As Label
-    Friend WithEvents Label1 As Label
+    Friend WithEvents NomeSX As Label
+    Friend WithEvents NomeDX As Label
     Friend WithEvents ButtonPiu As Button
     Friend WithEvents Button61 As Button
     Friend WithEvents ButtonMeno As Button
-    Friend WithEvents Button24 As Button
-    Friend WithEvents Button25 As Button
-    Friend WithEvents Button26 As Button
-    Friend WithEvents Button27 As Button
-    Friend WithEvents Button28 As Button
-    Friend WithEvents Button29 As Button
-    Friend WithEvents Button30 As Button
-    Friend WithEvents Button31 As Button
-    Friend WithEvents Button32 As Button
-    Friend WithEvents Button33 As Button
-    Friend WithEvents Button34 As Button
-    Friend WithEvents Button35 As Button
+    Friend WithEvents NumeroDX12 As Button
+    Friend WithEvents NumeroDX11 As Button
+    Friend WithEvents NumeroDX10 As Button
+    Friend WithEvents NumeroDX9 As Button
+    Friend WithEvents NumeroDX8 As Button
+    Friend WithEvents NumeroDX7 As Button
+    Friend WithEvents NumeroDX6 As Button
+    Friend WithEvents NumeroDX5 As Button
+    Friend WithEvents NumeroDX4 As Button
+    Friend WithEvents NumeroDX3 As Button
+    Friend WithEvents NumeroDX2 As Button
+    Friend WithEvents NumeroDX1 As Button
     Friend WithEvents SerialPort1 As IO.Ports.SerialPort
     Friend WithEvents btnEsci As Button
     Friend WithEvents lblStatus1 As Label
@@ -1251,4 +1288,7 @@ Partial Class MainForm
     Friend WithEvents SerialPort2 As IO.Ports.SerialPort
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Timer2 As Timer
+    Friend WithEvents btnBonusSX As Button
+    Friend WithEvents btnBonusDX As Button
+    Friend WithEvents ImageList2 As ImageList
 End Class
