@@ -104,7 +104,7 @@ Partial Class MainForm
         Me.NumeroDX2 = New System.Windows.Forms.Button()
         Me.NumeroDX1 = New System.Windows.Forms.Button()
         Me.SerialPort1 = New System.IO.Ports.SerialPort(Me.components)
-        Me.btnEsci = New System.Windows.Forms.Button()
+        Me.BtnEsci = New System.Windows.Forms.Button()
         Me.lblStatus1 = New System.Windows.Forms.Label()
         Me.lblStatus2 = New System.Windows.Forms.Label()
         Me.SerialPort2 = New System.IO.Ports.SerialPort(Me.components)
@@ -266,6 +266,7 @@ Partial Class MainForm
         Me.NumeroSX1.Name = "NumeroSX1"
         Me.NumeroSX1.Size = New System.Drawing.Size(60, 40)
         Me.NumeroSX1.TabIndex = 12
+        Me.NumeroSX1.TabStop = False
         Me.NumeroSX1.Text = "04"
         Me.NumeroSX1.UseVisualStyleBackColor = True
         '
@@ -277,6 +278,7 @@ Partial Class MainForm
         Me.NumeroSX2.Name = "NumeroSX2"
         Me.NumeroSX2.Size = New System.Drawing.Size(60, 40)
         Me.NumeroSX2.TabIndex = 13
+        Me.NumeroSX2.TabStop = False
         Me.NumeroSX2.Text = "05"
         Me.NumeroSX2.UseVisualStyleBackColor = True
         '
@@ -288,6 +290,7 @@ Partial Class MainForm
         Me.NumeroSX4.Name = "NumeroSX4"
         Me.NumeroSX4.Size = New System.Drawing.Size(60, 40)
         Me.NumeroSX4.TabIndex = 15
+        Me.NumeroSX4.TabStop = False
         Me.NumeroSX4.Text = "07"
         Me.NumeroSX4.UseVisualStyleBackColor = True
         '
@@ -299,6 +302,7 @@ Partial Class MainForm
         Me.NumeroSX3.Name = "NumeroSX3"
         Me.NumeroSX3.Size = New System.Drawing.Size(60, 40)
         Me.NumeroSX3.TabIndex = 14
+        Me.NumeroSX3.TabStop = False
         Me.NumeroSX3.Text = "06"
         Me.NumeroSX3.UseVisualStyleBackColor = True
         '
@@ -310,6 +314,7 @@ Partial Class MainForm
         Me.NumeroSX6.Name = "NumeroSX6"
         Me.NumeroSX6.Size = New System.Drawing.Size(60, 40)
         Me.NumeroSX6.TabIndex = 17
+        Me.NumeroSX6.TabStop = False
         Me.NumeroSX6.Text = "09"
         Me.NumeroSX6.UseVisualStyleBackColor = True
         '
@@ -321,6 +326,7 @@ Partial Class MainForm
         Me.NumeroSX5.Name = "NumeroSX5"
         Me.NumeroSX5.Size = New System.Drawing.Size(60, 40)
         Me.NumeroSX5.TabIndex = 16
+        Me.NumeroSX5.TabStop = False
         Me.NumeroSX5.Text = "08"
         Me.NumeroSX5.UseVisualStyleBackColor = True
         '
@@ -332,6 +338,7 @@ Partial Class MainForm
         Me.NumeroSX8.Name = "NumeroSX8"
         Me.NumeroSX8.Size = New System.Drawing.Size(60, 40)
         Me.NumeroSX8.TabIndex = 19
+        Me.NumeroSX8.TabStop = False
         Me.NumeroSX8.Text = "11"
         Me.NumeroSX8.UseVisualStyleBackColor = True
         '
@@ -343,6 +350,7 @@ Partial Class MainForm
         Me.NumeroSX7.Name = "NumeroSX7"
         Me.NumeroSX7.Size = New System.Drawing.Size(60, 40)
         Me.NumeroSX7.TabIndex = 18
+        Me.NumeroSX7.TabStop = False
         Me.NumeroSX7.Text = "10"
         Me.NumeroSX7.UseVisualStyleBackColor = True
         '
@@ -354,6 +362,7 @@ Partial Class MainForm
         Me.NumeroSX10.Name = "NumeroSX10"
         Me.NumeroSX10.Size = New System.Drawing.Size(60, 40)
         Me.NumeroSX10.TabIndex = 21
+        Me.NumeroSX10.TabStop = False
         Me.NumeroSX10.Text = "13"
         Me.NumeroSX10.UseVisualStyleBackColor = True
         '
@@ -365,6 +374,7 @@ Partial Class MainForm
         Me.NumeroSX9.Name = "NumeroSX9"
         Me.NumeroSX9.Size = New System.Drawing.Size(60, 40)
         Me.NumeroSX9.TabIndex = 20
+        Me.NumeroSX9.TabStop = False
         Me.NumeroSX9.Text = "12"
         Me.NumeroSX9.UseVisualStyleBackColor = True
         '
@@ -376,6 +386,7 @@ Partial Class MainForm
         Me.NumeroSX12.Name = "NumeroSX12"
         Me.NumeroSX12.Size = New System.Drawing.Size(60, 40)
         Me.NumeroSX12.TabIndex = 23
+        Me.NumeroSX12.TabStop = False
         Me.NumeroSX12.Text = "15"
         Me.NumeroSX12.UseVisualStyleBackColor = True
         '
@@ -387,6 +398,7 @@ Partial Class MainForm
         Me.NumeroSX11.Name = "NumeroSX11"
         Me.NumeroSX11.Size = New System.Drawing.Size(60, 40)
         Me.NumeroSX11.TabIndex = 22
+        Me.NumeroSX11.TabStop = False
         Me.NumeroSX11.Text = "14"
         Me.NumeroSX11.UseVisualStyleBackColor = True
         '
@@ -411,6 +423,7 @@ Partial Class MainForm
         Me.FSX1.Name = "FSX1"
         Me.FSX1.Size = New System.Drawing.Size(160, 40)
         Me.FSX1.TabIndex = 49
+        Me.FSX1.TabStop = False
         Me.FSX1.UseVisualStyleBackColor = True
         '
         'ImageList2
@@ -420,8 +433,8 @@ Partial Class MainForm
         Me.ImageList2.Images.SetKeyName(0, "f040.png")
         Me.ImageList2.Images.SetKeyName(1, "f140.png")
         Me.ImageList2.Images.SetKeyName(2, "f240.png")
-        Me.ImageList2.Images.SetKeyName(3, "f340.jpg")
-        Me.ImageList2.Images.SetKeyName(4, "f440.jpg")
+        Me.ImageList2.Images.SetKeyName(3, "f340.png")
+        Me.ImageList2.Images.SetKeyName(4, "f440.png")
         Me.ImageList2.Images.SetKeyName(5, "f540.png")
         '
         'FSX2
@@ -434,6 +447,7 @@ Partial Class MainForm
         Me.FSX2.Name = "FSX2"
         Me.FSX2.Size = New System.Drawing.Size(160, 40)
         Me.FSX2.TabIndex = 50
+        Me.FSX2.TabStop = False
         Me.FSX2.UseVisualStyleBackColor = True
         '
         'FSX3
@@ -446,6 +460,7 @@ Partial Class MainForm
         Me.FSX3.Name = "FSX3"
         Me.FSX3.Size = New System.Drawing.Size(160, 40)
         Me.FSX3.TabIndex = 51
+        Me.FSX3.TabStop = False
         Me.FSX3.UseVisualStyleBackColor = True
         '
         'FSX4
@@ -458,6 +473,7 @@ Partial Class MainForm
         Me.FSX4.Name = "FSX4"
         Me.FSX4.Size = New System.Drawing.Size(160, 40)
         Me.FSX4.TabIndex = 52
+        Me.FSX4.TabStop = False
         Me.FSX4.UseVisualStyleBackColor = True
         '
         'FSX8
@@ -470,6 +486,7 @@ Partial Class MainForm
         Me.FSX8.Name = "FSX8"
         Me.FSX8.Size = New System.Drawing.Size(160, 40)
         Me.FSX8.TabIndex = 56
+        Me.FSX8.TabStop = False
         Me.FSX8.UseVisualStyleBackColor = True
         '
         'FSX7
@@ -482,6 +499,7 @@ Partial Class MainForm
         Me.FSX7.Name = "FSX7"
         Me.FSX7.Size = New System.Drawing.Size(160, 40)
         Me.FSX7.TabIndex = 55
+        Me.FSX7.TabStop = False
         Me.FSX7.UseVisualStyleBackColor = True
         '
         'FSX6
@@ -494,6 +512,7 @@ Partial Class MainForm
         Me.FSX6.Name = "FSX6"
         Me.FSX6.Size = New System.Drawing.Size(160, 40)
         Me.FSX6.TabIndex = 54
+        Me.FSX6.TabStop = False
         Me.FSX6.UseVisualStyleBackColor = True
         '
         'FSX5
@@ -506,6 +525,7 @@ Partial Class MainForm
         Me.FSX5.Name = "FSX5"
         Me.FSX5.Size = New System.Drawing.Size(160, 40)
         Me.FSX5.TabIndex = 53
+        Me.FSX5.TabStop = False
         Me.FSX5.UseVisualStyleBackColor = True
         '
         'FSX12
@@ -518,6 +538,7 @@ Partial Class MainForm
         Me.FSX12.Name = "FSX12"
         Me.FSX12.Size = New System.Drawing.Size(160, 40)
         Me.FSX12.TabIndex = 60
+        Me.FSX12.TabStop = False
         Me.FSX12.UseVisualStyleBackColor = True
         '
         'FSX11
@@ -530,6 +551,7 @@ Partial Class MainForm
         Me.FSX11.Name = "FSX11"
         Me.FSX11.Size = New System.Drawing.Size(160, 40)
         Me.FSX11.TabIndex = 59
+        Me.FSX11.TabStop = False
         Me.FSX11.UseVisualStyleBackColor = True
         '
         'FSX10
@@ -542,6 +564,7 @@ Partial Class MainForm
         Me.FSX10.Name = "FSX10"
         Me.FSX10.Size = New System.Drawing.Size(160, 40)
         Me.FSX10.TabIndex = 58
+        Me.FSX10.TabStop = False
         Me.FSX10.UseVisualStyleBackColor = True
         '
         'FSX9
@@ -554,6 +577,7 @@ Partial Class MainForm
         Me.FSX9.Name = "FSX9"
         Me.FSX9.Size = New System.Drawing.Size(160, 40)
         Me.FSX9.TabIndex = 57
+        Me.FSX9.TabStop = False
         Me.FSX9.UseVisualStyleBackColor = True
         '
         'FDX12
@@ -566,6 +590,7 @@ Partial Class MainForm
         Me.FDX12.Name = "FDX12"
         Me.FDX12.Size = New System.Drawing.Size(160, 40)
         Me.FDX12.TabIndex = 96
+        Me.FDX12.TabStop = False
         Me.FDX12.UseVisualStyleBackColor = True
         '
         'FDX11
@@ -578,6 +603,7 @@ Partial Class MainForm
         Me.FDX11.Name = "FDX11"
         Me.FDX11.Size = New System.Drawing.Size(160, 40)
         Me.FDX11.TabIndex = 95
+        Me.FDX11.TabStop = False
         Me.FDX11.UseVisualStyleBackColor = True
         '
         'FDX10
@@ -590,6 +616,7 @@ Partial Class MainForm
         Me.FDX10.Name = "FDX10"
         Me.FDX10.Size = New System.Drawing.Size(160, 40)
         Me.FDX10.TabIndex = 94
+        Me.FDX10.TabStop = False
         Me.FDX10.UseVisualStyleBackColor = True
         '
         'FDX9
@@ -602,6 +629,7 @@ Partial Class MainForm
         Me.FDX9.Name = "FDX9"
         Me.FDX9.Size = New System.Drawing.Size(160, 40)
         Me.FDX9.TabIndex = 93
+        Me.FDX9.TabStop = False
         Me.FDX9.UseVisualStyleBackColor = True
         '
         'FDX8
@@ -614,6 +642,7 @@ Partial Class MainForm
         Me.FDX8.Name = "FDX8"
         Me.FDX8.Size = New System.Drawing.Size(160, 40)
         Me.FDX8.TabIndex = 92
+        Me.FDX8.TabStop = False
         Me.FDX8.UseVisualStyleBackColor = True
         '
         'FDX7
@@ -626,6 +655,7 @@ Partial Class MainForm
         Me.FDX7.Name = "FDX7"
         Me.FDX7.Size = New System.Drawing.Size(160, 40)
         Me.FDX7.TabIndex = 91
+        Me.FDX7.TabStop = False
         Me.FDX7.UseVisualStyleBackColor = True
         '
         'FDX6
@@ -638,6 +668,7 @@ Partial Class MainForm
         Me.FDX6.Name = "FDX6"
         Me.FDX6.Size = New System.Drawing.Size(160, 40)
         Me.FDX6.TabIndex = 90
+        Me.FDX6.TabStop = False
         Me.FDX6.UseVisualStyleBackColor = True
         '
         'FDX5
@@ -650,6 +681,7 @@ Partial Class MainForm
         Me.FDX5.Name = "FDX5"
         Me.FDX5.Size = New System.Drawing.Size(160, 40)
         Me.FDX5.TabIndex = 89
+        Me.FDX5.TabStop = False
         Me.FDX5.UseVisualStyleBackColor = True
         '
         'FDX4
@@ -662,6 +694,7 @@ Partial Class MainForm
         Me.FDX4.Name = "FDX4"
         Me.FDX4.Size = New System.Drawing.Size(160, 40)
         Me.FDX4.TabIndex = 88
+        Me.FDX4.TabStop = False
         Me.FDX4.UseVisualStyleBackColor = True
         '
         'FDX3
@@ -674,6 +707,7 @@ Partial Class MainForm
         Me.FDX3.Name = "FDX3"
         Me.FDX3.Size = New System.Drawing.Size(160, 40)
         Me.FDX3.TabIndex = 87
+        Me.FDX3.TabStop = False
         Me.FDX3.UseVisualStyleBackColor = True
         '
         'FDX2
@@ -686,6 +720,7 @@ Partial Class MainForm
         Me.FDX2.Name = "FDX2"
         Me.FDX2.Size = New System.Drawing.Size(160, 40)
         Me.FDX2.TabIndex = 86
+        Me.FDX2.TabStop = False
         Me.FDX2.UseVisualStyleBackColor = True
         '
         'FDX1
@@ -698,6 +733,7 @@ Partial Class MainForm
         Me.FDX1.Name = "FDX1"
         Me.FDX1.Size = New System.Drawing.Size(160, 40)
         Me.FDX1.TabIndex = 85
+        Me.FDX1.TabStop = False
         Me.FDX1.UseVisualStyleBackColor = True
         '
         'NomeDX12
@@ -906,6 +942,7 @@ Partial Class MainForm
         Me.NumeroDX12.Name = "NumeroDX12"
         Me.NumeroDX12.Size = New System.Drawing.Size(60, 40)
         Me.NumeroDX12.TabIndex = 114
+        Me.NumeroDX12.TabStop = False
         Me.NumeroDX12.Text = "15"
         Me.NumeroDX12.UseVisualStyleBackColor = True
         '
@@ -917,6 +954,7 @@ Partial Class MainForm
         Me.NumeroDX11.Name = "NumeroDX11"
         Me.NumeroDX11.Size = New System.Drawing.Size(60, 40)
         Me.NumeroDX11.TabIndex = 113
+        Me.NumeroDX11.TabStop = False
         Me.NumeroDX11.Text = "14"
         Me.NumeroDX11.UseVisualStyleBackColor = True
         '
@@ -928,6 +966,7 @@ Partial Class MainForm
         Me.NumeroDX10.Name = "NumeroDX10"
         Me.NumeroDX10.Size = New System.Drawing.Size(60, 40)
         Me.NumeroDX10.TabIndex = 112
+        Me.NumeroDX10.TabStop = False
         Me.NumeroDX10.Text = "13"
         Me.NumeroDX10.UseVisualStyleBackColor = True
         '
@@ -939,6 +978,7 @@ Partial Class MainForm
         Me.NumeroDX9.Name = "NumeroDX9"
         Me.NumeroDX9.Size = New System.Drawing.Size(60, 40)
         Me.NumeroDX9.TabIndex = 111
+        Me.NumeroDX9.TabStop = False
         Me.NumeroDX9.Text = "12"
         Me.NumeroDX9.UseVisualStyleBackColor = True
         '
@@ -950,6 +990,7 @@ Partial Class MainForm
         Me.NumeroDX8.Name = "NumeroDX8"
         Me.NumeroDX8.Size = New System.Drawing.Size(60, 40)
         Me.NumeroDX8.TabIndex = 110
+        Me.NumeroDX8.TabStop = False
         Me.NumeroDX8.Text = "11"
         Me.NumeroDX8.UseVisualStyleBackColor = True
         '
@@ -961,6 +1002,7 @@ Partial Class MainForm
         Me.NumeroDX7.Name = "NumeroDX7"
         Me.NumeroDX7.Size = New System.Drawing.Size(60, 40)
         Me.NumeroDX7.TabIndex = 109
+        Me.NumeroDX7.TabStop = False
         Me.NumeroDX7.Text = "10"
         Me.NumeroDX7.UseVisualStyleBackColor = True
         '
@@ -972,6 +1014,7 @@ Partial Class MainForm
         Me.NumeroDX6.Name = "NumeroDX6"
         Me.NumeroDX6.Size = New System.Drawing.Size(60, 40)
         Me.NumeroDX6.TabIndex = 108
+        Me.NumeroDX6.TabStop = False
         Me.NumeroDX6.Text = "09"
         Me.NumeroDX6.UseVisualStyleBackColor = True
         '
@@ -983,6 +1026,7 @@ Partial Class MainForm
         Me.NumeroDX5.Name = "NumeroDX5"
         Me.NumeroDX5.Size = New System.Drawing.Size(60, 40)
         Me.NumeroDX5.TabIndex = 107
+        Me.NumeroDX5.TabStop = False
         Me.NumeroDX5.Text = "08"
         Me.NumeroDX5.UseVisualStyleBackColor = True
         '
@@ -994,6 +1038,7 @@ Partial Class MainForm
         Me.NumeroDX4.Name = "NumeroDX4"
         Me.NumeroDX4.Size = New System.Drawing.Size(60, 40)
         Me.NumeroDX4.TabIndex = 106
+        Me.NumeroDX4.TabStop = False
         Me.NumeroDX4.Text = "07"
         Me.NumeroDX4.UseVisualStyleBackColor = True
         '
@@ -1005,6 +1050,7 @@ Partial Class MainForm
         Me.NumeroDX3.Name = "NumeroDX3"
         Me.NumeroDX3.Size = New System.Drawing.Size(60, 40)
         Me.NumeroDX3.TabIndex = 105
+        Me.NumeroDX3.TabStop = False
         Me.NumeroDX3.Text = "06"
         Me.NumeroDX3.UseVisualStyleBackColor = True
         '
@@ -1016,6 +1062,7 @@ Partial Class MainForm
         Me.NumeroDX2.Name = "NumeroDX2"
         Me.NumeroDX2.Size = New System.Drawing.Size(60, 40)
         Me.NumeroDX2.TabIndex = 104
+        Me.NumeroDX2.TabStop = False
         Me.NumeroDX2.Text = "05"
         Me.NumeroDX2.UseVisualStyleBackColor = True
         '
@@ -1027,6 +1074,7 @@ Partial Class MainForm
         Me.NumeroDX1.Name = "NumeroDX1"
         Me.NumeroDX1.Size = New System.Drawing.Size(60, 40)
         Me.NumeroDX1.TabIndex = 103
+        Me.NumeroDX1.TabStop = False
         Me.NumeroDX1.Text = "04"
         Me.NumeroDX1.UseVisualStyleBackColor = True
         '
@@ -1034,15 +1082,15 @@ Partial Class MainForm
         '
         Me.SerialPort1.BaudRate = 2400
         '
-        'btnEsci
+        'BtnEsci
         '
-        Me.btnEsci.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEsci.Location = New System.Drawing.Point(846, 692)
-        Me.btnEsci.Name = "btnEsci"
-        Me.btnEsci.Size = New System.Drawing.Size(160, 50)
-        Me.btnEsci.TabIndex = 115
-        Me.btnEsci.Text = "EXIT"
-        Me.btnEsci.UseVisualStyleBackColor = True
+        Me.BtnEsci.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnEsci.Location = New System.Drawing.Point(846, 692)
+        Me.BtnEsci.Name = "BtnEsci"
+        Me.BtnEsci.Size = New System.Drawing.Size(160, 50)
+        Me.BtnEsci.TabIndex = 115
+        Me.BtnEsci.Text = "EXIT"
+        Me.BtnEsci.UseVisualStyleBackColor = True
         '
         'lblStatus1
         '
@@ -1106,13 +1154,13 @@ Partial Class MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1018, 762)
+        Me.ClientSize = New System.Drawing.Size(1014, 758)
         Me.ControlBox = False
         Me.Controls.Add(Me.btnBonusDX)
         Me.Controls.Add(Me.btnBonusSX)
         Me.Controls.Add(Me.lblStatus2)
         Me.Controls.Add(Me.lblStatus1)
-        Me.Controls.Add(Me.btnEsci)
+        Me.Controls.Add(Me.BtnEsci)
         Me.Controls.Add(Me.NumeroDX12)
         Me.Controls.Add(Me.NumeroDX11)
         Me.Controls.Add(Me.NumeroDX10)
@@ -1281,7 +1329,7 @@ Partial Class MainForm
     Friend WithEvents NumeroDX2 As Button
     Friend WithEvents NumeroDX1 As Button
     Friend WithEvents SerialPort1 As IO.Ports.SerialPort
-    Friend WithEvents btnEsci As Button
+    Friend WithEvents BtnEsci As Button
     Friend WithEvents lblStatus1 As Label
     Friend WithEvents lblStatus2 As Label
     Friend WithEvents SerialPort2 As IO.Ports.SerialPort

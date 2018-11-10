@@ -52,7 +52,7 @@
         MainForm.NomeDX10.Text = NomeDX10.Text
         MainForm.NomeDX11.Text = NomeDX11.Text
         MainForm.NomeDX12.Text = NomeDX12.Text
-
+        SaveDefaults()
         Me.Close()
     End Sub
 

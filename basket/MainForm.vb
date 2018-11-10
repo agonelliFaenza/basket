@@ -6,7 +6,7 @@
     Public bonusSx As Byte
     Public bonusDx As Byte
 
-    Private Sub btnEsci_Click(sender As Object, e As EventArgs) Handles btnEsci.Click
+    Private Sub btnEsci_Click(sender As Object, e As EventArgs) Handles BtnEsci.Click
         Me.Close()
     End Sub
 
@@ -17,6 +17,8 @@
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        If btnBonusSX.BackColor = SystemColors.Control Then bufFalli(51) = 0 Else bufFalli(51) = 1
+        If btnBonusDX.BackColor = SystemColors.Control Then bufFalli(52) = 0 Else bufFalli(52) = 1
         Try
             If SerialPort1.IsOpen = False Then
                 SerialPort1.Open()
@@ -84,6 +86,7 @@
         If Val(My.Settings.Timeout) <= 0 Then
             My.Settings.Timeout = 3000
         End If
+        LoadDefaults()
         frmSetupSquadre.Show()
     End Sub
 
@@ -140,9 +143,10 @@
         NomeDX10.Enabled = True
         NomeDX11.Enabled = True
         NomeDX12.Enabled = True
-
+        Button61.Enabled = True
+        BtnEsci.Enabled = True
         Timer2.Enabled = False
-        Active = vbNull
+        Active = 0
     End Sub
 
     Private Sub ButtonPiu_Click(sender As Object, e As EventArgs) Handles ButtonPiu.Click
@@ -284,8 +288,7 @@
         If temp > 5 Then temp = 5
         bufFalli(50) = temp
 
-        If btnBonusSX.BackColor = SystemColors.Control Then bufFalli(51) = 0 Else bufFalli(51) = 1
-        If btnBonusDX.BackColor = SystemColors.Control Then bufFalli(52) = 0 Else bufFalli(52) = 1
+
         Timer2.Interval = Val(My.Settings.Timeout)
         Timer2.Stop()
         Timer2.Start()
@@ -436,6 +439,7 @@
     End Sub
 
     Private Sub Nome_Click(sender As Object, e As EventArgs) Handles NomeSX9.Click, NomeSX8.Click, NomeSX7.Click, NomeSX6.Click, NomeSX5.Click, NomeSX4.Click, NomeSX3.Click, NomeSX2.Click, NomeSX12.Click, NomeSX11.Click, NomeSX10.Click, NomeSX1.Click, NomeDX9.Click, NomeDX8.Click, NomeDX7.Click, NomeDX6.Click, NomeDX5.Click, NomeDX4.Click, NomeDX3.Click, NomeDX2.Click, NomeDX12.Click, NomeDX11.Click, NomeDX10.Click, NomeDX1.Click
+
         If sender.tag = Active Then
             Call Timer2_Tick(sender, e)
         Else
@@ -463,6 +467,8 @@
             NomeDX10.Enabled = False
             NomeDX11.Enabled = False
             NomeDX12.Enabled = False
+            Button61.Enabled = False
+            BtnEsci.Enabled = False
             ButtonPiu.Enabled = True
             ButtonMeno.Enabled = True
             Timer2.Interval = Val(My.Settings.Timeout)
@@ -471,6 +477,7 @@
             sender.enabled = True
             Active = sender.tag
         End If
+        sender.focus
     End Sub
 
     Private Sub btnBonusSX_Click(sender As Object, e As EventArgs) Handles btnBonusSX.Click
